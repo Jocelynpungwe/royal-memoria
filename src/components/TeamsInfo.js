@@ -28,10 +28,12 @@ function TeamsInfo({ theTeam, teamLocation }) {
 const Wrapper = styled.section`
   text-align: center;
   margin-top: 50px;
-  h3,
-  h4 {
-    /* color: var(--clr-primary-1); */
+  h3 {
     color: black;
+  }
+
+  h4 {
+    color: var(--primary-gold);
   }
 
   img {
@@ -48,8 +50,6 @@ const Wrapper = styled.section`
   p {
     margin-bottom: 0;
     line-height: 1.8;
-    /* color: var(--clr-primary-3); */
-    color: black;
   }
   .services-center {
     margin-top: 4rem;
@@ -82,21 +82,10 @@ const Wrapper = styled.section`
       font-size: 2rem;
     }
   }
-  @media (min-width: 1020px) {
-    /* .header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    } */
-  }
-  @media (min-width: 1020px) {
+
+  @media (min-width: 800px) {
     .services-center {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-  }
-  @media (min-width: 1280px) {
-    padding: 0;
-    .section-center {
-      transform: translateY(5rem);
     }
   }
 `

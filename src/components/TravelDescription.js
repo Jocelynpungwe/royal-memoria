@@ -7,17 +7,15 @@ function TravelDescription() {
       <img src={montainImage} alt="sea view" />
 
       <div className="info2">
-        <div className="info1">
-          <h2>Unforgettable Journeys</h2>
-          <p>
-            Embark on a world of endless possibilities with Wanderlust
-            Adventures, your premier travel agency dedicated to crafting
-            extraordinary experiences. Whether you crave the sun-kissed beaches,
-            majestic mountain landscapes, or vibrant cultural escapades, our
-            expert team is committed to curating seamless and personalized
-            journeys tailored to your desires.
-          </p>
-        </div>
+        <h2>Unforgettable Journeys</h2>
+        <p>
+          Embark on a world of endless possibilities with Wanderlust Adventures,
+          your premier travel agency dedicated to crafting extraordinary
+          experiences. Whether you crave the sun-kissed beaches, majestic
+          mountain landscapes, or vibrant cultural escapades, our expert team is
+          committed to curating seamless and personalized journeys tailored to
+          your desires.
+        </p>
       </div>
     </Wrapper>
   )
@@ -25,16 +23,16 @@ function TravelDescription() {
 
 const Wrapper = styled.div`
   position: relative;
-  color: aliceblue;
-  margin-top: 35px;
-  height: 30vh;
-  .info1 {
-    width: 70%;
-    margin: 0 auto;
+  height: 350px;
+
+  h2 {
+    color: var(--primary-gold);
   }
 
   p {
-    color: aliceblue;
+    color: white;
+    opacity: 0.8;
+    max-width: 800px;
   }
   img {
     width: 100%;
@@ -43,12 +41,19 @@ const Wrapper = styled.div`
   }
 
   .info2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     position: absolute;
-    top: 0;
     left: 0;
+    bottom: 0;
     background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
     height: 100%;
-    padding: 25px;
+    padding: 20px;
   }
 `
 export default TravelDescription

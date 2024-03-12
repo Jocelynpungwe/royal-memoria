@@ -39,5 +39,9 @@ const Wrapper = styled.div`
     height: 500px;
     object-fit: cover;
   }
+
+  h3 {
+    color: var(--primary-gold);
+  }
 `
 export default CosmetecDiscription

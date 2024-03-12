@@ -25,7 +25,7 @@ function EntertainmentInfo() {
 
 const Wrapper = styled.div`
   text-align: center;
-  padding: 50px 0;
+  padding: 5rem 0;
   h2 {
     color: var(--primary-gold);
   }

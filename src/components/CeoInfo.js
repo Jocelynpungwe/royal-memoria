@@ -5,7 +5,7 @@ import { ceo } from '../utils/constants'
 
 function CeoInfo() {
   return (
-    <Wrapper id="staff">
+    <Wrapper>
       <div className="section-center">
         <article className="header">
           <h3>Our Team</h3>
@@ -33,20 +33,23 @@ function CeoInfo() {
 }
 
 const Wrapper = styled.section`
+  background: black;
+  text-align: center;
+  padding: 5rem 0;
   h3,
   h4 {
     color: var(--primary-gold);
   }
 
-  .subtitle {
-    color: black;
-    font-weight: 700;
+  p {
+    line-height: 1.8;
+    color: white;
   }
 
-  padding: 3rem 0;
-
-  background: black;
-  text-align: center;
+  .subtitle {
+    color: var(--secondy-gold);
+    font-weight: 700;
+  }
   .icon {
     img {
       object-fit: cover;
@@ -60,29 +63,22 @@ const Wrapper = styled.section`
     margin-bottom: 2rem;
     color: var(--primary-gold);
   }
-  p {
-    line-height: 1.8;
-    color: white;
-  }
+
   .services-center {
     margin-top: 2rem;
     display: grid;
     gap: 2.5rem;
   }
   .service {
-    /* background: var(--clr-primary-7); */
-    background: var(--clr-grey-1);
+    background: var(--primary-blackish);
     text-align: center;
     padding: 2.5rem 2rem;
     border-radius: var(--radius);
     width: 90%;
     max-width: 750px;
     margin: 0 auto;
-    p {
-      /* color: var(--clr-primary-2); */
-      color: white;
-    }
   }
+
   span {
     width: 10rem;
     height: 10rem;
@@ -97,18 +93,6 @@ const Wrapper = styled.section`
       font-size: 2rem;
     }
   }
-
-  /* @media (min-width: 1020px) {
-    .header {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media (min-width: 1020px) {
-    .services-center {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-  } */
 `
 
 export default CeoInfo

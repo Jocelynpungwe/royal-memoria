@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <main>
       <PageHero title="about" />
-      <Wrapper className="page section section-center">
+      <Wrapper className="section-center">
         <img src={aboutImg} alt="nice desk" />
         <article>
           <div className="title">
@@ -36,19 +36,19 @@ const AboutPage = () => {
 }
 const Wrapper = styled.section`
   display: grid;
+  padding: 5rem 0;
   gap: 4rem;
   img {
     width: 100%;
+    height: 100%;
     display: block;
     border-radius: var(--radius);
-
     object-fit: cover;
   }
   p {
     line-height: 2;
     max-width: 45em;
     margin: 1rem auto;
-    color: var(--clr-grey-5);
   }
   .title {
     text-align: left;
@@ -56,7 +56,7 @@ const Wrapper = styled.section`
   .underline {
     margin-left: 0;
   }
-  @media (min-width: 992px) {
+  @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr;
   }
 `

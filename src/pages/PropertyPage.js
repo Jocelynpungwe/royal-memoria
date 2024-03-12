@@ -1,6 +1,7 @@
 import React from 'react'
 import imgHero from '../images/property/propertyhero.jpg'
 import {
+  EntertainmentInfo,
   PropertyContact,
   PropertyDescription,
   PropertyInfo,
@@ -11,6 +12,7 @@ function PropertyPage() {
   return (
     <Wrapper>
       <ServiceHero image={imgHero} title="Property and Innovation" />
+      <EntertainmentInfo />
       <PropertyDescription />
       <PropertyInfo />
       <PropertyContact />

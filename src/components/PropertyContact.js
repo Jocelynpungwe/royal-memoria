@@ -1,21 +1,100 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import imageTwo from '../images/property/property4.jpg'
 
 function PropertyContact() {
+  const initialState = {
+    fullName: '',
+    email: '',
+    country: '',
+    subject: '',
+    message: '',
+  }
+
+  const [contactUs, setContactUs] = useState(initialState)
+
+  function changeContactUs(e) {
+    const name = e.target.name
+    const value = e.target.value
+
+    setContactUs((prevData) => {
+      return {
+        ...prevData,
+        [name]: value,
+      }
+    })
+  }
+
   return (
     <Wrapper>
       <div className="section-center container">
         <div>
-          <h4>Contact Us</h4>
-          <p>
-            Embark on a world of endless possibilities with Wanderlust
-            Adventures, your premier travel agency dedicated to crafting
-            extraordinary experiences. Whether you crave the sun-kissed beaches,
-            majestic mountain landscapes, or vibrant cultural escapades, our
-            expert team is committed to curating seamless and personalized
-            journeys tailored to your desires.
-          </p>
+          <div>
+            <h4>Contact Us</h4>
+            <p>
+              Embark on a world of endless possibilities with Wanderlust
+              Adventures, your premier travel agency dedicated to crafting
+              extraordinary experiences. Whether you crave the sun-kissed
+              beaches, majestic mountain landscapes, or vibrant cultural
+              escapades, our expert team is committed to curating seamless and
+              personalized journeys tailored to your desires.
+            </p>
+          </div>
+          <form>
+            <div>
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="fullName"
+                name="fullName"
+                value={contactUs.fullName}
+                onChange={changeContactUs}
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+                value={contactUs.email}
+                onChange={changeContactUs}
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Country"
+                id="country"
+                name="country"
+                value={contactUs.country}
+                onChange={changeContactUs}
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                name="subject"
+                value={contactUs.subject}
+                onChange={changeContactUs}
+                required
+              />
+            </div>
+            <textarea
+              placeholder="Message"
+              value={contactUs.message}
+              onChange={changeContactUs}
+              name="message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
         </div>
         <img src={imageTwo} alt="test name" className="image-two" />
       </div>
@@ -24,8 +103,72 @@ function PropertyContact() {
 }
 
 const Wrapper = styled.div`
-  padding: 30px 0;
+  padding: 5rem 0;
   background: var(--primary-gray);
+
+  form {
+    width: 100%;
+    align-self: center;
+    border-radius: 7px;
+  }
+  input {
+    border-radius: 6px;
+    margin-bottom: 6px;
+    padding: 12px;
+    border: 1px solid rgba(50, 50, 93, 0.1);
+    max-height: 44px;
+    font-size: 16px;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid rgba(50, 50, 93, 0.1);
+    border-radius: 6px;
+    margin-bottom: 6px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  label {
+    color: #000;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.214px;
+    margin-bottom: 9px;
+  }
+
+  button {
+    background: var(--primary-gold);
+    font-family: Arial, sans-serif;
+    color: var(--actual-white);
+    border-radius: 0 0 4px 4px;
+    border: 0;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease;
+    box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+    margin: 0 auto;
+  }
+
+  button:hover {
+    filter: contrast(115%);
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
 
   img {
     width: 100%;

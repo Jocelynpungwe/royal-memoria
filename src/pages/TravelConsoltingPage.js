@@ -7,20 +7,28 @@ import {
   TravelDescription,
   TravelInfo,
   ServiceHero,
+  PropertyContact,
 } from '../components'
 
 function TravelConsoltingPage() {
   return (
     <Wrapper>
       <ServiceHero image={image} title="Royal Memoria Traveling Ageny" />
-      <TravelInfo />
-      <TravelConsoltingInfo />
+      <div className="container">
+        <TravelInfo />
+        <TravelConsoltingInfo />
+      </div>
       <TravelDescription />
-      <TravelContact />
+      <PropertyContact />
+      {/* <TravelContact /> */}
     </Wrapper>
   )
 }
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  .container {
+    padding: 5rem 0;
+  }
+`
 
 export default TravelConsoltingPage

@@ -14,22 +14,23 @@ function MovieTrending({ movie, trending }) {
               : 'movie-background'
           }
         >
-          <video id="myVideo">
-            <source src={movie.vid} type="video/mp4" />
-          </video>
-          <div className="movie-info">
-            <p>{movie.year}</p>
-            <Dot style={{ color: 'white' }} />
-            {movie.genre === 'Movie' ? (
-              <Film style={{ color: 'white' }} />
-            ) : (
-              <Tv style={{ color: 'white' }} />
-            )}
-            <p style={{ marginLeft: '0.5rem' }}>{movie.genre}</p>
-            <Dot style={{ color: 'white' }} />
-            <p>{movie.rated}</p>
+          <video src={movie.vid} controls="controls" />
+
+          <div className="container-movie">
+            <div className="movie-info">
+              <p>{movie.year}</p>
+              <Dot className="icons" />
+              {movie.genre === 'Movie' ? (
+                <Film className="icons" />
+              ) : (
+                <Tv className="icons" />
+              )}
+              <p style={{ marginLeft: '0.5rem' }}>{movie.genre}</p>
+              <Dot className="icons" />
+              <p>{movie.rated}</p>
+            </div>
+            <p className="movie-title">{movie.title}</p>
           </div>
-          <p>{movie.title}</p>
         </div>
       </div>
     </Wrapper>
@@ -37,8 +38,20 @@ function MovieTrending({ movie, trending }) {
 }
 
 const Wrapper = styled.div`
+  .container-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+
   .movie-background {
     object-fit: cover;
+    .movie-title {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      color: var(--secondy-gold);
+    }
   }
   .trend-size {
     width: 300px;
@@ -53,6 +66,10 @@ const Wrapper = styled.div`
 
   .movie-info {
     display: flex;
+    color: white;
+    .icons {
+      margin-top: 25px;
+    }
   }
 `
 

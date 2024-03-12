@@ -33,7 +33,7 @@ const Wrapper = styled.div`
   }
   .trending-info {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
   .recomand-info {
     display: grid;

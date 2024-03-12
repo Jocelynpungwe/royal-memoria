@@ -8,7 +8,7 @@ function Product({ id, images, name, price, category, description, setMain }) {
         <img src={images} alt={name} />
         <div className="info-div">
           <h4>{name}</h4>
-          <h5 className="price">{price}</h5>
+          <h5 className="price">f{price}</h5>
           <p>{description.substring(0, 150)}...</p>
           {/* <Link
             to={`/${id}`}
@@ -33,7 +33,7 @@ const Wrapper = styled.article`
     margin-bottom: 0.5rem;
   }
   .price {
-    color: var(--secondy-chocolate);
+    color: var(--primary-gold);
     margin-bottom: 0.75rem;
   }
   p {

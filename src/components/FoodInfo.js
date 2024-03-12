@@ -13,7 +13,7 @@ function FoodInfo() {
       </div>
       <div className="flex">
         <div>
-          <p>01</p>
+          <p className="numbers">01</p>
           <h3>African original</h3>
           <p>What makes us special What makes us special</p>
         </div>
@@ -21,11 +21,11 @@ function FoodInfo() {
       </div>
       <div className="flexTwo">
         <div>
-          <p>02</p>
+          <p className="numbers">02</p>
           <h3>African original</h3>
           <p>What makes us special What makes us special</p>
           <div>
-            <p>03</p>
+            <p className="numbers">03</p>
             <h3>African original</h3>
             <p>What makes us special What makes us special</p>
           </div>
@@ -39,7 +39,13 @@ function FoodInfo() {
 const Wrapper = styled.div`
   display: grid;
   grid-row-gap: 25px;
-  padding: 50px 0;
+  padding: 5rem 0;
+  .numbers {
+    font-size: 3rem;
+    color: black;
+    opacity: 0.75;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -49,13 +55,14 @@ const Wrapper = styled.div`
 
   .first-container {
     border-bottom: 1px solid black;
+    margin-left: 1rem;
   }
 
   .flex,
   .flexTwo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
   }
 
   .flexTwo {
@@ -64,9 +71,9 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1080px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 30px;
     .flexTwo {
       img {
         order: 0;

@@ -43,8 +43,16 @@ function PropertyInfo() {
 
 const Wrapper = styled.div`
   background: black;
-  padding: 30px;
-  color: white;
+  padding: 5rem 0;
+
+  h2 {
+    color: var(--primary-gold);
+    margin-top: 1rem;
+  }
+  p {
+    color: white;
+    opacity: 0.75;
+  }
 
   img {
     object-fit: cover;
@@ -62,6 +70,9 @@ const Wrapper = styled.div`
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 30px;
     }
+  }
+  h2 {
+    margin-top: 0;
   }
 `
 export default PropertyInfo

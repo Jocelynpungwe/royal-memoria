@@ -6,7 +6,7 @@ function HomeDescription() {
   return (
     <Wrapper className="section-center">
       <div className="what-we-bring">
-        <h2 className="title">What We Bring To The "Party"</h2>
+        <h2 className="title">Who Are We</h2>
         <p className="desc">
           A whole lot of how we do our work is influenced by what the client
           aims to accomplish and where we fit in with our client’s goal. Our
@@ -16,7 +16,7 @@ function HomeDescription() {
         </p>
       </div>
       <div className="mission">
-        <h2>Mission</h2>
+        <h3>What Makes Us Special</h3>
         <p>
           To provide the best services to our clients because we have a name to
           build and uphold, Our first question that we ask ourselves is what
@@ -25,7 +25,6 @@ function HomeDescription() {
           repeatable and impressive. This question leads us to querying and
           understanding what the client expects.
         </p>
-        <h2>history</h2>
         <p>
           Created in 2016 in South Africa by Memoria Pungwe “Royal Memoria” is a
           multi-service company, with Three Subsidiary, it has also been
@@ -38,11 +37,13 @@ function HomeDescription() {
       </div>
       <img src={queenChess} alt="royal memeoria" />
       <div className="moto">
-        <h2>Motto</h2>
+        <h3>What We Bring</h3>
         <p>
-          Is to establish ourselves as one of the most credible companies so
-          that we can attract and generate more business not only in the
-          creative field but also in the technical and servicing fields.
+          A whole lot of how we do our work is influenced by what the client
+          aims to accomplish and where we fit in with our client’s goal. Our
+          services are thus scalable and diverse, this approach makes us
+          comfortable in a business. This working method is at the cone of our
+          company, and it highlights our belief in excellence and outstanding.
         </p>
       </div>
     </Wrapper>
@@ -51,11 +52,30 @@ function HomeDescription() {
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 5rem 0;
+
+  h3,
+  h4 {
+    color: var(--primary-gold);
+  }
+
+  p {
+    color: white;
+    opacity: 0.75;
+  }
+
+  .desc {
+    text-align: center;
+    color: black;
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
   .what-we-bring {
     order: -2;
+    margin-bottom: 20px;
   }
+
   .hero-img {
     margin-bottom: 25px;
     order: -1;
@@ -65,6 +85,13 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
   }
+
+  .mission,
+  .moto {
+    background: black;
+    padding: 25px;
+  }
+
   @media (min-width: 800px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -81,9 +108,7 @@ const Wrapper = styled.div`
     .mission {
       grid-column: span 2;
       grid-row: 1 2;
-      background: black;
       color: white;
-      padding: 25px;
     }
 
     img {
@@ -93,10 +118,9 @@ const Wrapper = styled.div`
       grid-column: 1 2;
       grid-row: 1 3;
       height: 100%;
-      background: black;
       color: white;
-      padding: 25px;
     }
+
     .hero-img {
       grid-column: 2 3;
       grid-row: span 2;

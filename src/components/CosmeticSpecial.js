@@ -17,5 +17,8 @@ const Wrapper = styled.div`
   img {
     width: 100%;
   }
+  p {
+    color: var(--primary-gold);
+  }
 `
 export default CosmeticSpecial

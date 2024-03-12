@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 function ServiceHero({ video, image, title }) {
@@ -14,11 +14,15 @@ function ServiceHero({ video, image, title }) {
         {image && <img src={image} alt="hero section" />}
 
         <div className="content">
-          <div className="info">
+          <div className="section-center info">
             <h1>{title}</h1>
-            <p>Lorem ipsum...</p>
-
-            <button id="myBtn">Pause</button>
+            <p>
+              Created in 2016 in South Africa by Memoria Pungwe “Royal Memoria”
+              is a multi-service company, with Three Subsidiary, it has also
+              been operating successfully in Canada and the democratic republic
+              of Congo since July 2021.
+            </p>
+            <Link id="myBtn">Contact Us</Link>
           </div>
         </div>
       </div>
@@ -29,6 +33,16 @@ function ServiceHero({ video, image, title }) {
 const Wrapper = styled.div`
   /* Add some content at the bottom of the video/page */
   position: relative;
+  h1 {
+    font-size: 2rem;
+    color: var(--primary-gold);
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 800px;
+  }
+
   video,
   img {
     width: 100%;
@@ -48,12 +62,13 @@ const Wrapper = styled.div`
     left: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
+    color: white;
     width: 100%;
     height: 100%;
     padding: 20px;
   }
-  .info {
+  p {
+    color: white;
   }
 
   /* Style the button used to pause/play the video */
@@ -61,15 +76,41 @@ const Wrapper = styled.div`
     width: 200px;
     font-size: 18px;
     padding: 10px;
+    border-radius: 5px;
     border: none;
-    background: #000;
-    color: #fff;
+    background: var(--primary-gold);
+    color: black;
     cursor: pointer;
   }
 
   #myBtn:hover {
-    background: #ddd;
+    background: var(--secondy-gold);
     color: black;
+  }
+
+  @media (min-width: 800px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    #myBtn {
+      width: 300px;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    #myBtn {
+      width: 400px;
+    }
   }
 `
 

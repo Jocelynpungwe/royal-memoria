@@ -36,7 +36,7 @@ function ServiceNav() {
             <Link to="property">Property and Innovation</Link>
           </li>
           <li>
-            <Link to="food">M Kitoko</Link>
+            <Link to="food">M Kitoko Food</Link>
           </li>
           <li>
             <Link to="cosmetic">Cosmetics</Link>
@@ -88,7 +88,6 @@ const Wrapper = styled.div`
     width: 250px;
     height: 200px;
     background-color: rgba(49, 48, 48, 0.3);
-
     z-index: 9999;
     li {
       margin: 1rem 0;
