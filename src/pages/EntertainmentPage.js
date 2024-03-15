@@ -7,15 +7,21 @@ import {
   PropertyContact,
   ServiceHero,
 } from '../components'
-
+import propertyImage from '../images/chess.png'
 function EntertainmentPage() {
   return (
     <>
-      <ServiceHero video={entvid} title="Royal Memoria Entertainment" />
+      <ServiceHero
+        video={entvid}
+        title="Royal Memoria Entertainment"
+        description=" Royal Memoria Entertainment, a subsidiary of Royal Memoria, stands
+              at the forefront of the modern film and media industry.We are
+              dedicated to crafting nationally branded content that pushes the
+              boundaries of storytelling."
+      />
       <EntertainmentInfo />
       <BehindTheScene />
-      <EntertainmentInfo />
-      <PropertyContact />
+      <PropertyContact departmenImage={propertyImage} />
     </>
   )
 }

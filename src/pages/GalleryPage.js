@@ -6,7 +6,6 @@ function GalleryPage() {
   return (
     <Wrapper>
       <PageHero title="Gallery" />
-      <GalleryImage />
     </Wrapper>
   )
 }

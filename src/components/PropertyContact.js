@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import imageTwo from '../images/property/property4.jpg'
+import imageTwo from '../images/africa.png'
+import { FaEnvelope } from 'react-icons/fa'
 
-function PropertyContact() {
+function PropertyContact({ departmenImage }) {
   const initialState = {
     fullName: '',
     email: '',
@@ -27,74 +28,90 @@ function PropertyContact() {
 
   return (
     <Wrapper>
-      <div className="section-center container">
-        <div>
+      <div className="section-center">
+        <div className="container">
           <div>
-            <h4>Contact Us</h4>
-            <p>
-              Embark on a world of endless possibilities with Wanderlust
-              Adventures, your premier travel agency dedicated to crafting
-              extraordinary experiences. Whether you crave the sun-kissed
-              beaches, majestic mountain landscapes, or vibrant cultural
-              escapades, our expert team is committed to curating seamless and
-              personalized journeys tailored to your desires.
-            </p>
-          </div>
-          <form>
             <div>
-              <input
-                type="text"
-                placeholder="Full Name"
-                id="fullName"
-                name="fullName"
-                value={contactUs.fullName}
-                onChange={changeContactUs}
-                required
-              />
+              <h4>Contact Us</h4>
+              <h5>Department</h5>
+              <p>
+                Have a question or inquiry? Reach out to us at any of our branch
+                locations or simply fill out our online contact form bellow, and
+                we'll promptly get back to you.
+              </p>
+              <h5>Canada</h5>
+              <div className="icons">
+                <FaEnvelope />
+                <p className="icons">pmemoria@royalmemoriaentertainment.com</p>
+              </div>
+              <h5>South Africa</h5>
+              <div className="icons">
+                <FaEnvelope />
+                <p>timepromorsa@gmail.com</p>
+              </div>
+              <h5>Dr Congo</h5>
+              <div className="icons">
+                <FaEnvelope />
+                <p>admroyalconsolting@gmail.com</p>
+              </div>
             </div>
-            <div>
-              <input
-                type="email"
-                placeholder="Email"
-                id="email"
-                name="email"
-                value={contactUs.email}
+            <form>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  id="fullName"
+                  name="fullName"
+                  value={contactUs.fullName}
+                  onChange={changeContactUs}
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  value={contactUs.email}
+                  onChange={changeContactUs}
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Country"
+                  id="country"
+                  name="country"
+                  value={contactUs.country}
+                  onChange={changeContactUs}
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  id="subject"
+                  name="subject"
+                  value={contactUs.subject}
+                  onChange={changeContactUs}
+                  required
+                />
+              </div>
+              <textarea
+                placeholder="Message"
+                value={contactUs.message}
                 onChange={changeContactUs}
+                name="message"
                 required
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Country"
-                id="country"
-                name="country"
-                value={contactUs.country}
-                onChange={changeContactUs}
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Subject"
-                id="subject"
-                name="subject"
-                value={contactUs.subject}
-                onChange={changeContactUs}
-                required
-              />
-            </div>
-            <textarea
-              placeholder="Message"
-              value={contactUs.message}
-              onChange={changeContactUs}
-              name="message"
-              required
-            ></textarea>
+              ></textarea>
 
-            <button type="submit">Send Message</button>
-          </form>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <img src={departmenImage} alt="test name" className="image-two" />
         </div>
         <img src={imageTwo} alt="test name" className="image-two" />
       </div>
@@ -177,11 +194,20 @@ const Wrapper = styled.div`
     object-fit: cover;
   }
 
+  .icons {
+    display: flex;
+    gap: 6px;
+    p {
+      margin-top: -5px;
+    }
+  }
+
   @media (min-width: 800px) {
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 25px;
+      margin-bottom: 32px;
     }
 
     img {

@@ -7,14 +7,10 @@ function TravelDescription() {
       <img src={montainImage} alt="sea view" />
 
       <div className="info2">
-        <h2>Unforgettable Journeys</h2>
+        <h2>Destinations</h2>
         <p>
-          Embark on a world of endless possibilities with Wanderlust Adventures,
-          your premier travel agency dedicated to crafting extraordinary
-          experiences. Whether you crave the sun-kissed beaches, majestic
-          mountain landscapes, or vibrant cultural escapades, our expert team is
-          committed to curating seamless and personalized journeys tailored to
-          your desires.
+          Explore our curated list of destinations and discover your next
+          adventure.
         </p>
       </div>
     </Wrapper>

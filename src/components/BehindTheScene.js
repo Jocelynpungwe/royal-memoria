@@ -29,11 +29,9 @@ function BehindTheScene() {
           </div>
         </div>
         <p>
-          We use the latest equipment and cutting-edge techniques to create
-          stunning visuals that captivate your audience and tell your story in a
-          compelling way. Whether you're looking to promote your brand, showcase
-          your products, or capture a special event, we have the skills and
-          expertise to bring your vision to life.
+          We have the potential to deliver affordable, quality content to
+          audiences across the continent and around the world, through mixed
+          broadcasts.
         </p>
         <VideoPortfolio />
       </div>

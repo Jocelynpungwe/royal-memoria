@@ -27,10 +27,10 @@ function ServiceNav() {
           onMouseLeave={toggleCloseDropdown}
         >
           <li>
-            <Link to="entertainment">Entertainment</Link>
+            <Link to="entertainment">Film and Production</Link>
           </li>
           <li>
-            <Link to="travel">Travel and Consulting</Link>
+            <Link to="travel">Travel and Tourism</Link>
           </li>
           <li>
             <Link to="property">Property and Innovation</Link>
@@ -80,9 +80,40 @@ const Wrapper = styled.div`
     }
   }
 
+  .side-link {
+    a {
+      /* color: var(--clr-grey-3); */
+      color: black;
+      font-size: 1rem;
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+
+      &:hover {
+        padding: 1rem 1.5rem;
+        padding-left: 2rem;
+        background: var(--clr-grey-10);
+        color: var(--clr-grey-2);
+      }
+    }
+  }
+
   .dropdown-menu {
     position: absolute;
     margin-top: 30px;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    background-color: rgba(49, 48, 48, 0.3);
+    z-index: 9999;
+    li {
+      padding: 0.5rem 0;
+    }
+  }
+
+  .sidedrop-down {
+    position: absolute;
+    margin-left: 30px;
     top: 0;
     left: 0;
     width: 250px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import cosmetciOne from '../images/cosmetic/cosmetic2.jpg'
+import cosmetciOne from '../images/cosmetic/2.png'
 import { Star, CheckCircleIcon, Crown } from 'lucide-react'
 
 function CosmetciWhyUs() {
@@ -11,37 +11,46 @@ function CosmetciWhyUs() {
       <div>
         <h2>Why Choose Us</h2>
         <p>
-          YVNG Saint Company presents a divine fusion line of religious-themed
-          hoodies. Embrace a unique blend of spirit...
+          Choose Royal Memoria Cosmetics for unparalleled quality, innovation,
+          and luxury in beauty. Our cosmetics line is meticulously crafted with
+          premium ingredients, offering exquisite formulas that deliver
+          exceptional results. From vibrant pigments to nourishing skincare
+          benefits, each product is designed to enhance your natural beauty and
+          empower your confidence. With a commitment to excellence and a passion
+          for innovation, Royal Memoria Cosmetics sets the standard for luxury
+          beauty experiences. Trust us to elevate your beauty routine and
+          indulge in the epitome of sophistication.
         </p>
         <div>
           <div className="why-container">
             <Star className="icons" />
             <div>
-              <h3>YVNG Saint Company </h3>
+              <h3>Ingredients :</h3>
               <p>
-                YVNG Saint Company presents a divine fusion line of
-                religious-themed hoodies.
+                Our perfume stand out because of the high-quality ingredients
+                used in its formulation .The scent is unique, sophisticated, and
+                particularly appealing to the individual's preferences.
               </p>
             </div>
           </div>
           <div className="why-container">
             <CheckCircleIcon className="icons" />
             <div>
-              <h3>YVNG Saint Company</h3>
+              <h3>Longevity:</h3>
               <p>
-                YVNG Saint Company presents a divine fusion line of
-                religious-themed hoodies.
+                Our perfume has excellent staying power.The longevity of a
+                perfume is crucial for many consumers.
               </p>
             </div>
           </div>
           <div className="why-container">
             <Crown className="icons" />
             <div>
-              <h3>YVNG Saint Company </h3>
+              <h3>Packaging: </h3>
               <p>
-                YVNG Saint Company presents a divine fusion line of
-                religious-themed hoodies.
+                The packaging of our perfume can greatly influence consumer's
+                decision. our perfume comes in an aesthetically pleasing and
+                elegant bottle.
               </p>
             </div>
           </div>
@@ -65,7 +74,7 @@ const Wrapper = styled.div`
 
   img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
   }
 

@@ -1,35 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 import Hero from './Hero'
-import queenChess from '../images/property/queenchess.jpg'
+import queenChess from '../images/chess.png'
 function HomeDescription() {
   return (
     <Wrapper className="section-center">
       <div className="what-we-bring">
         <h2 className="title">Who Are We</h2>
         <p className="desc">
-          A whole lot of how we do our work is influenced by what the client
-          aims to accomplish and where we fit in with our client’s goal. Our
-          services are thus scalable and diverse, this approach makes us
-          comfortable in a business. This working method is at the cone of our
-          company, and it highlights our belief in excellence and outstanding.
+          Royal memoria is a multi-service company with five subsidiaries in
+          Canada ,South africa, and Dr Congo .We specializes in media buying,
+          movie and production, food and production, property and innovation,
+          travel and tourism, and cosmetics products.
         </p>
       </div>
       <div className="mission">
         <h3>What Makes Us Special</h3>
         <p>
-          To provide the best services to our clients because we have a name to
-          build and uphold, Our first question that we ask ourselves is what
-          does the client need? This question leads to an in-depth understanding
-          that makes our company excel at delivering a quality service that’s
-          repeatable and impressive. This question leads us to querying and
-          understanding what the client expects.
+          With five subsidiaries spanning across Canada, South Africa, and Dr
+          Congo, Royal Memoria offers a diverse range of services, catering to
+          various markets and industries. This diversity allows us to leverage
+          unique insights and expertise from different regions, providing
+          clients with tailored solutions to meet their specific needs.
         </p>
         <p>
-          Created in 2016 in South Africa by Memoria Pungwe “Royal Memoria” is a
-          multi-service company, with Three Subsidiary, it has also been
-          operating successfully in Canada and the democratic republic of Congo
-          since July 2021.
+          Each subsidiary within Royal Memoria is staffed with industry experts
+          who possess in-depth knowledge and experience in their respective
+          fields. This expertise ensures that our clients receive top-notch
+          service and solutions that are backed by industry best practices and
+          insights.
         </p>
       </div>
       <div className="hero-img">
@@ -39,11 +38,10 @@ function HomeDescription() {
       <div className="moto">
         <h3>What We Bring</h3>
         <p>
-          A whole lot of how we do our work is influenced by what the client
-          aims to accomplish and where we fit in with our client’s goal. Our
-          services are thus scalable and diverse, this approach makes us
-          comfortable in a business. This working method is at the cone of our
-          company, and it highlights our belief in excellence and outstanding.
+          at Royal Memoria, we bring a unique blend of creativity, strategy,
+          collaboration, innovation, excellence, customer-centricity, and
+          adaptability to every project, ensuring that our clients receive
+          exceptional value and results that drive their success.
         </p>
       </div>
     </Wrapper>
@@ -84,6 +82,7 @@ const Wrapper = styled.div`
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   .mission,

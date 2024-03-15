@@ -6,10 +6,7 @@ function CosmeticSpecial() {
     <Wrapper className="section-center">
       <h2>Save upto 35% buy a combo?</h2>
       <img src={comsmericCombo} alt="cosmetic" />
-      <p>
-        Save upto 35% buy a combo Save upto 35% buy a combo Save upto 35% buy a
-        combo
-      </p>
+      <p>Save upto 35% buy a combo S</p>
     </Wrapper>
   )
 }

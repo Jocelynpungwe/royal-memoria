@@ -1,21 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import cosmetciOne from '../images/cosmetic/cosmetic1.jpg'
+import cosmetciOne from '../images/cosmetic/1.png'
 function CosmetecDiscription() {
   return (
     <Wrapper className="section-center">
       <img src={cosmetciOne} alt="best skin cleaner" />
       <div>
-        <h2>Best skin cleanser</h2>
+        <h2>Royal MakeUp</h2>
         <p>
-          YVNG Saint Company presents a divine fusion of faith and fashion with
-          our exclusive line of religious-themed hoodies. Embrace a unique blend
-          of spirit...
+          With our Brand Memoria’s Secret , We provides high-quality makeup
+          products.We have created a unique formulations that offer benefits not
+          found in other products.Offering a wide range of shades to cater to
+          diverse skin tones.
         </p>
-        <div className="small-grid">
-          <h3>100% Organic</h3>
-          <h3>Herbal Product</h3>
-        </div>
+        <img src={cosmetciOne} alt="best skin cleaner" />
       </div>
     </Wrapper>
   )

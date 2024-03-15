@@ -12,8 +12,17 @@ function CeoInfo() {
         </article>
         <div className="services-center">
           {ceo.map((service) => {
-            const { id, icon, title, text, descriptionOne, descriptionTwo } =
-              service
+            const {
+              id,
+              icon,
+              title,
+              text,
+              descriptionOne,
+              descriptionTwo,
+              descriptionThree,
+              descriptionFour,
+              descriptionFive,
+            } = service
             return (
               <article className="service" key={id}>
                 <span className="icon">
@@ -23,6 +32,9 @@ function CeoInfo() {
                 <p className="subtitle">{text}</p>
                 <p>{descriptionOne}</p>
                 <p>{descriptionTwo}</p>
+                <p>{descriptionThree}</p>
+                <p>{descriptionFour}</p>
+                <p>{descriptionFive}</p>
               </article>
             )
           })}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-function ServiceHero({ video, image, title }) {
+function ServiceHero({ video, image, title, description }) {
   return (
     <Wrapper>
       <div className="hero-entertaiment">
@@ -16,13 +16,10 @@ function ServiceHero({ video, image, title }) {
         <div className="content">
           <div className="section-center info">
             <h1>{title}</h1>
-            <p>
-              Created in 2016 in South Africa by Memoria Pungwe “Royal Memoria”
-              is a multi-service company, with Three Subsidiary, it has also
-              been operating successfully in Canada and the democratic republic
-              of Congo since July 2021.
-            </p>
-            <Link id="myBtn">Contact Us</Link>
+            <p>{description}</p>
+            <Link to="/contact" id="myBtn">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

@@ -1,92 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import imgSource from '../images/hero/1.png'
-import imgSourceOne from '../images/hero/2.png'
-import imgSourceTwo from '../images/hero/3.png'
-function GalleryImage() {
+
+function GalleryImage({ array }) {
   return (
-    <Wrapper className="section-center">
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
-      <div>
-        <img src={imgSource} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceOne} alt="one" />
-      </div>
-      <div>
-        <img src={imgSourceTwo} alt="one" />
-      </div>
+    <Wrapper>
+      {array.map((image) => {
+        return (
+          <div>
+            <img src={image.urlImg} alt={image.altImg} />
+          </div>
+        )
+      })}
     </Wrapper>
   )
 }

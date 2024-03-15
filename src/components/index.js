@@ -37,6 +37,11 @@ import CosmetciWhyUs from './CosmetciWhyUs'
 import GalleryImage from './GalleryImage'
 import CharityInfo from './CharityInfo'
 import ServiceNav from './ServiceNav'
+import ServiceSideBar from './ServiceSideBar'
+import PropertyAbout from './PropertyAbout'
+import OurStory from './OurStory'
+import HowToDonate from './HowToDonate'
+import CharityGallery from './CharityGallery'
 
 export {
   Navbar,
@@ -78,4 +83,9 @@ export {
   GalleryImage,
   CharityInfo,
   ServiceNav,
+  ServiceSideBar,
+  PropertyAbout,
+  OurStory,
+  HowToDonate,
+  CharityGallery,
 }

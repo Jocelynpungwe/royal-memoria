@@ -25,12 +25,23 @@ function Footer() {
                 <li onClick={toggleCloseDropdown}>
                   <Link to="about">About</Link>
                 </li>
-                <ServiceNav />
                 <li onClick={toggleCloseDropdown}>
-                  <Link to="contact">Contact</Link>
+                  <Link to="entertainment">Film and Production</Link>
                 </li>
                 <li onClick={toggleCloseDropdown}>
-                  <Link to="gallery">Gallery</Link>
+                  <Link to="travel">Travel and Tourism</Link>
+                </li>
+                <li onClick={toggleCloseDropdown}>
+                  <Link to="property">Property and Innovation</Link>
+                </li>
+                <li onClick={toggleCloseDropdown}>
+                  <Link to="food">M Kitoko Food</Link>
+                </li>
+                <li onClick={toggleCloseDropdown}>
+                  <Link to="cosmetic">Cosmetics</Link>
+                </li>
+                <li onClick={toggleCloseDropdown}>
+                  <Link to="contact">Contact</Link>
                 </li>
                 <li onClick={toggleCloseDropdown}>
                   <Link to="charity">Charity</Link>

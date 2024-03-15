@@ -10,15 +10,20 @@ import {
 } from '../components'
 import cosmeticImage from '../images/cosmetic/cosmetic4.jpg'
 import { cosmeticData } from '../utils/constants'
+import propertyImage from '../images/chess.png'
 function CosmeticPage() {
   return (
     <Wrapper>
-      <ServiceHero image={cosmeticImage} title="Royal Cosmetics" />
+      <ServiceHero
+        image={cosmeticImage}
+        title="Royal Memoria Cosmetics"
+        description=" Royal Memoria Cosmetics sets the standard for luxury beauty experiences. Trust us to elevate your beauty routine and indulge in the epitome of sophistication."
+      />
       <FeaturedProduct array={cosmeticData} className="cosmtic-group" />
       <CosmeticSpecial />
       <CosmetecDiscription />
       <CosmetciWhyUs />
-      <PropertyContact />
+      <PropertyContact departmenImage={propertyImage} />
     </Wrapper>
   )
 }

@@ -1,21 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import montainImage from '../images/hero/5.png'
+import montainImage from '../images/food/2.png'
 
-function FoodDescription() {
+function FoodDescription({ title, description }) {
   return (
     <Wrapper>
       <img src={montainImage} alt="sea view" />
       <div className="info2">
-        <h2>Unforgettable Journeys</h2>
-        <p>
-          Embark on a world of endless possibilities with Wanderlust Adventures,
-          your premier travel agency dedicated to crafting extraordinary
-          experiences. Whether you crave the sun-kissed beaches, majestic
-          mountain landscapes, or vibrant cultural escapades, our expert team is
-          committed to curating seamless and personalized journeys tailored to
-          your desires.
-        </p>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
     </Wrapper>
   )

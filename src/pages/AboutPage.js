@@ -19,13 +19,17 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Created in 2016 in South Africa by Memoria Pungwe “Royal Memoria” is
-            a multi-service company, with Three Subsidiary, it has also been
-            operating successfully in Canada and the democratic republic of
-            Congo since July 2021, built on principles of ethics, good integrity
-            and empowering and influencing those around us especially the youth.
-            We continue to deliver innovative and exciting experiences to our
-            customers through our range of services.
+            Established in 2016 by Memoria Pungwe in South Africa, Royal Memoria
+            has grown into a multi-service company with five subsidiaries. Since
+            July 2021, we have expanded our successful operations into Canada
+            and the Democratic Republic of Congo. Our foundation is built on
+            principles of ethics, integrity, and empowerment, particularly of
+            the youth. Continuously, we strive to deliver innovative and
+            thrilling experiences to our customers across a diverse range of
+            services. Whether you engage with us in South Africa, Canada, or the
+            Democratic Republic of Congo, expect nothing short of excellence and
+            a commitment to making a positive impact in the communities we
+            serve.
           </p>
         </article>
       </Wrapper>

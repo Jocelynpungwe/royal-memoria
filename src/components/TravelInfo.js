@@ -8,17 +8,17 @@ function TravelInfo() {
       <img src={imageCanada} alt="canada city" className="first-img" />
 
       <div className="info">
-        <h2>Unforgettable Journeys</h2>
+        <h2>What is the Deparment of Travel and Tourism about?</h2>
         <p>
-          Embark on a world of endless possibilities with Wanderlust Adventures,
-          your premier travel agency dedicated to crafting extraordinary
-          experiences. Whether you crave the sun-kissed beaches, majestic
-          mountain landscapes, or vibrant cultural escapades, our expert team is
-          committed to curating seamless and personalized journeys tailored to
-          your desires. Let us turn your travel dreams into reality, ensuring
-          every moment is filled with wonder and discovery. Discover the world
-          with confidence, convenience, and unparalleled expertise - choose
-          Wanderlust Adventures for a lifetime of unforgettable travel memories
+          Royal Travel is a subsidiary of Royal Memoria , it is is dedicated to
+          facilitating smart and efficient travel for both young people and
+          businesses, By leveraging digital experiences, we aims to simplify the
+          complexities of business travel, driving program adoption, cost
+          savings, and talent retention. With dedicated team members spanning
+          across Canada, the Democratic Republic of Congo (DRC), Nigeria, and
+          South Africa, with a goal not only to streamline travel processes but
+          also to contribute to shaping a sustainable future for both business
+          and tourism travel.
         </p>
       </div>
       <img src={imageWindow} alt="canada city" className="second-img" />

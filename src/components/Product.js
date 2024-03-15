@@ -1,14 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-function Product({ id, images, name, price, category, description, setMain }) {
+function Product({
+  id,
+  images,
+  name,
+  price,
+  priceCongo,
+  description,
+  priceSa,
+  setMain,
+}) {
   return (
     <Wrapper>
       <div className="container">
         <img src={images} alt={name} />
         <div className="info-div">
           <h4>{name}</h4>
-          <h5 className="price">f{price}</h5>
+          {price && <h5 className="price">f{price}</h5>}
+          {priceCongo && <h5 className="price">DRC Price:{priceCongo}</h5>}
+          {priceSa && <h5 className="price">South Africa Price: R{priceSa}</h5>}
           <p>{description.substring(0, 150)}...</p>
           {/* <Link
             to={`/${id}`}

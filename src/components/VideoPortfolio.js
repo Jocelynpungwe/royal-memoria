@@ -1,25 +1,24 @@
 import React from 'react'
 
 import MovieTrending from './MovieTrending'
-import { movietrend, movierecomnd } from '../utils/constants'
+import { movieGallery, movierecomnd } from '../utils/constants'
 import styled from 'styled-components'
+import GalleryImage from './GalleryImage'
 
 function VideoPortfolio() {
   return (
     <Wrapper>
       <div>
-        <h2>New Release</h2>
-        <div className="trending-info">
-          {movietrend.map((movie) => {
-            return <MovieTrending movie={movie} trending={true} />
-          })}
-        </div>
         <h2>Video Portfolio</h2>
         <div className="recomand-info">
           {movierecomnd.map((movie) => {
             return <MovieTrending movie={movie} />
           })}
         </div>
+      </div>
+      <h2>Gallery</h2>
+      <div>
+        <GalleryImage array={movieGallery} />
       </div>
     </Wrapper>
   )

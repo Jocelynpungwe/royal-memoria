@@ -1,0 +1,109 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleSidebar } from '../features/actionSlice'
+import { toggleDropdown, closeDropdown } from '../features/servicesSlice'
+import styled from 'styled-components'
+
+function ServiceSideBar() {
+  const { isDropdownOpen } = useSelector((store) => store.services)
+  const dispatch = useDispatch()
+
+  const toggle = () => {
+    dispatch(toggleSidebar())
+  }
+
+  const toggleDropdownNav = () => {
+    dispatch(toggleDropdown())
+  }
+
+  const toggleCloseDropdown = () => {
+    dispatch(closeDropdown())
+  }
+
+  return (
+    <Wrapper className="side-link">
+      <button onClick={toggleDropdownNav}>Services</button>
+
+      {isDropdownOpen && (
+        <ul
+          onClick={toggleDropdownNav}
+          className="sidedrop-down"
+          onMouseLeave={toggleCloseDropdown}
+        >
+          <li onClick={toggle}>
+            <Link to="entertainment">Entertainment</Link>
+          </li>
+          <li onClick={toggle}>
+            <Link to="travel">Travel and Consulting</Link>
+          </li>
+          <li onClick={toggle}>
+            <Link to="property">Property and Innovation</Link>
+          </li>
+          <li onClick={toggle}>
+            <Link to="food">M Kitoko Food</Link>
+          </li>
+          <li onClick={toggle}>
+            <Link to="cosmetic">Cosmetics</Link>
+          </li>
+        </ul>
+      )}
+    </Wrapper>
+  )
+}
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  button {
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      padding: 1rem 1.5rem;
+      padding-left: 2rem;
+      background: var(--clr-grey-10);
+      color: var(--clr-grey-2);
+    }
+  }
+
+  .side-link {
+    a {
+      color: black;
+      font-size: 1rem;
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+
+      &:hover {
+        padding: 1rem 1.5rem;
+        padding-left: 2rem;
+        background: var(--clr-grey-10);
+        color: var(--clr-grey-2);
+      }
+    }
+  }
+
+  .sidedrop-down {
+    position: absolute;
+    margin-left: 120px;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 320px;
+    background-color: rgba(49, 48, 48, 0.3);
+    z-index: 9999;
+    li {
+      margin: 0.3rem 0;
+    }
+  }
+`
+
+export default ServiceSideBar

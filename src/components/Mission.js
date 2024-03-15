@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { goals } from '../utils/constants'
 
-function Mission() {
+function Mission({ array }) {
   return (
     <Wrapper>
       <div className="section-center">
@@ -17,7 +16,7 @@ function Mission() {
           </p>
         </article> */}
         <div className="services-center">
-          {goals.map((service) => {
+          {array.map((service) => {
             const { id, icon, title, text } = service
             return (
               <article className="service" key={id}>

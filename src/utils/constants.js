@@ -2,124 +2,155 @@ import React from 'react'
 import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
 import imgOne from '../images/hero/6.png'
 import imgTwo from '../images/hero/2.png'
-import imgThree from '../images/hero/3.png'
+
+import imgThree from '../images/travel/travelhero.jpg'
 import imgFour from '../images/hero/4.png'
+
 import imgFive from '../images/hero/5.png'
 import imgSix from '../images/hero/1.png'
 import staffOne from '../images/team/ceo/ceo.jpg'
-import vidOne from '../images/hero/entvid.mp4'
 
-import cosmeticImageOne from '../images/cosmetic/cosmetic1.jpg'
-import cosmeticImageTwo from '../images/cosmetic/cosmetic2.jpg'
-import cosmeticImageThree from '../images/cosmetic/cosmetic5.jpg'
+import vidTwo from '../images/movies/movie2.mp4'
+import vidThree from '../images/movies/movie3.mp4'
+import vidFour from '../images/movies/movie4.mp4'
+import vidFive from '../images/movies/movie5.mp4'
+import vidSix from '../images/movies/movie6.mp4'
 
-export const movietrend = [
+import cosmeticImageOne from '../images/cosmetic/4.png'
+import cosmeticImageTwo from '../images/cosmetic/5.png'
+
+import img1 from '../images/behindsceneimage/img1.jpg'
+import img2 from '../images/behindsceneimage/img2.jpg'
+import img3 from '../images/behindsceneimage/img3.jpg'
+import img4 from '../images/behindsceneimage/img4.jpg'
+import img5 from '../images/behindsceneimage/img5.jpg'
+import img6 from '../images/behindsceneimage/img6.jpg'
+import img7 from '../images/behindsceneimage/img7.jpg'
+import img8 from '../images/behindsceneimage/img8.jpg'
+import img9 from '../images/behindsceneimage/img9.jpg'
+import img10 from '../images/behindsceneimage/img10.jpg'
+import img11 from '../images/behindsceneimage/img11.jpg'
+import img12 from '../images/behindsceneimage/img12.jpg'
+import img13 from '../images/behindsceneimage/img13.jpg'
+import img14 from '../images/behindsceneimage/img14.jpg'
+import img15 from '../images/behindsceneimage/img15.jpg'
+import img16 from '../images/behindsceneimage/img16.jpg'
+import img17 from '../images/behindsceneimage/img17.jpg'
+import img18 from '../images/behindsceneimage/img18.jpg'
+
+import foodOne from '../images/food/4.png'
+import foodWater from '../images/food/8.png'
+import foodTwo from '../images/food/9.png'
+
+export const movieGallery = [
   {
-    vid: vidOne,
-    title: 'Avetar',
-    year: '2015',
-    genre: 'Movie',
-    rated: 'PG',
+    urlImg: img1,
+    altImg: 'the image',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Movie',
-    rated: 'PG',
+    urlImg: img2,
+    altImg: 'the image',
   },
   {
-    vid: vidOne,
-    title: 'Incredibles',
-    year: '2019',
-    genre: 'Series',
-    rated: 'PG',
+    urlImg: img3,
+    altImg: 'the image',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Series',
-    rated: 'PG30',
+    urlImg: img4,
+    altImg: 'the image',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Movie',
-    rated: 'PG',
+    urlImg: img5,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img6,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img7,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img8,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img9,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img10,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img11,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img12,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img13,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img14,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img15,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img16,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img17,
+    altImg: 'the image',
+  },
+  {
+    urlImg: img18,
+    altImg: 'the image',
   },
 ]
 
 export const movierecomnd = [
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
+    vid: vidTwo,
+    title: 'Mafia',
+    year: '2023',
     genre: 'Movie',
     rated: 'PG',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
+    vid: vidThree,
+    title: 'Beautiful lies',
+    year: '2023',
     genre: 'Movie',
     rated: 'PG',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
+    vid: vidFour,
+    title: 'Mafia 2',
+    year: '2023',
     genre: 'Movie',
     rated: 'PG',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
+    vid: vidFive,
+    title: 'African Connection',
+    year: '2022',
     genre: 'Movie',
     rated: 'PG',
   },
   {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
+    vid: vidSix,
+    title: 'Beautiful lies',
+    year: '2023',
     genre: 'Movie',
-    rated: 'PG',
-  },
-  {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Movie',
-    rated: 'PG',
-  },
-  {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Movie',
-    rated: 'PG',
-  },
-  {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Series',
-    rated: 'PG',
-  },
-  {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Movie',
-    rated: 'PG',
-  },
-  {
-    vid: vidOne,
-    title: 'Beyond Earth',
-    year: '2019',
-    genre: 'Series',
     rated: 'PG',
   },
 ]
@@ -168,31 +199,47 @@ export const goals = [
     id: 1,
     icon: <GiCompass />,
     title: 'mission',
-    text: 'To provide the best services to our clients because we have a name to build and uphold, Our first question that we ask ourselves is what does the client need ? ',
+    text: 'Our mission at Royal Memoria is to inspire and empower individuals, businesses, and communities to thrive by delivering innovative solutions, unparalleled service, and sustainable value.  ',
   },
   {
     id: 2,
     icon: <GiDiamondHard />,
     title: 'motto',
-    text: 'Is to establish ourselves as one of the most credible companies so that we can attract and generate more business not only in the creative field but also in the technical and servicing fields.',
+    text: 'Our motto is to solidify our reputation as one of the most trusted companies, enabling us to expand our business across diverse sectors including creative, technical, and other industries.',
   },
   {
     id: 3,
     icon: <GiStabbedNote />,
     title: 'history',
-    text: 'Created in 2016 in South Africa by Memoria Pungwe “Royal Memoria” is a multi-service company, with Three Subsidiary, it has also been operating successfully in Canada and the democratic republic of Congo since July 2021.',
+    text: 'Founded in 2016 by Memoria Pungwe in South Africa, Royal Memoria swiftly evolved into a multi-service company. Since July 2021, our footprint has expanded to Canada and the Democratic Republic of Congo.',
+  },
+]
+
+export const charity = [
+  {
+    id: 1,
+    icon: <GiCompass />,
+    title: 'mission',
+    text: ' Our Mission is to empower communities through sustainable initiatives in education, healthcare, and economic development. We strive to provide resources, support, and advocacy to underserved populations, fostering a culture of inclusivity and equality',
+  },
+  {
+    id: 2,
+    icon: <GiDiamondHard />,
+    title: 'Vision',
+    text: 'Our Vision is to create a world where every children has access to education, healthcare, and opportunities for personal growth.',
   },
 ]
 
 export const foodData = [
   {
     id: 1,
-    images: imgFive,
-    name: 'food One',
-    price: 4500,
-    category: 'hoodies',
+    images: foodOne,
+    name: 'Royal Burger',
+    priceCongo: 8500,
+    priceSa: 18,
+    category: 'food',
     description:
-      'YVNG Saint Company presents a divine fusion of faith and fashion with our exclusive line of religious-themed hoodies. Embrace a unique blend of spirituality and streetwear as our meticulously designed hoodies seamlessly integrate sacred symbols and powerful motifs, creating a tangible expression of your unwavering devotion.',
+      'This is a Combination of Sweetness and juiciness.A burger that passes the "burger test" is typically one that meets or exceeds expectations in terms of taste, texture, and overall satisfaction.',
     stock: 0,
     colors: ['black'],
     stars: 4.5,
@@ -200,12 +247,12 @@ export const foodData = [
   },
   {
     id: 2,
-    images: imgFive,
-    name: 'food 3',
+    images: foodWater,
+    name: 'Water Kitoko',
     price: 2500,
-    category: 'caps',
+    category: 'Water',
     description:
-      'YVNG Saint Company brings forth a collection of religious-inspired caps that transcend fashion, merging timeless spirituality with contemporary style. Each cap is a testament to faith, adorned with sacred symbols and meaningful designs, allowing you to carry your beliefs with you wherever you go.',
+      'Produced our own sparkling water brand "Memoria"! Sparkling water has gained popularity as a refreshing and healthier alternative to sugary sodas and beverages. We have establish "Memoria" as a trusted and preferred sparkling water brand among our consumers.',
     stock: 0,
     colors: ['black'],
     stars: 4,
@@ -213,12 +260,12 @@ export const foodData = [
   },
   {
     id: 3,
-    images: imgFive,
-    name: 'food 2',
+    images: foodTwo,
+    name: 'Chips',
     price: 3500,
     category: 'beanies',
     description:
-      'YVNG Saint Company introduces a divine touch to your winter essentials with our collection of religious-based beanies. Experience the warmth of faith as our beanies seamlessly blend religious symbols and meaningful motifs, creating a cozy yet powerful accessory for the devout.',
+      'We do it without oil, Cooking fries without oil can indeed reduce the fat content compared to traditional deep-frying methods. This method typically involves baking or air frying the fries rather than immersing them in oil.',
     stock: 10,
     colors: ['black', 'gray', 'darkorange', 'green'],
     stars: 4.4,
@@ -230,11 +277,11 @@ export const cosmeticData = [
   {
     id: 1,
     images: cosmeticImageOne,
-    name: 'Cosmetic One',
+    name: 'PM Perfume',
     price: 4500,
-    category: 'hoodies',
+    category: 'Perfume',
     description:
-      'YVNG Saint Company presents a divine fusion of faith and fashion with our exclusive line of religious-themed hoodies. Embrace a unique blend of spirituality and streetwear as our meticulously designed hoodies seamlessly integrate sacred symbols and powerful motifs, creating a tangible expression of your unwavering devotion.',
+      'This perfume has a Floral scents, associated with freshness, elegance, and femininity, it can evoke various emotions and impressions.',
     stock: 0,
     colors: ['black'],
     stars: 4.5,
@@ -243,28 +290,15 @@ export const cosmeticData = [
   {
     id: 2,
     images: cosmeticImageTwo,
-    name: 'Cosmetic Two',
+    name: 'Pocket Perfume',
     price: 2500,
-    category: 'caps',
+    category: 'Perfume',
     description:
-      'YVNG Saint Company brings forth a collection of religious-inspired caps that transcend fashion, merging timeless spirituality with contemporary style. Each cap is a testament to faith, adorned with sacred symbols and meaningful designs, allowing you to carry your beliefs with you wherever you go.',
+      'Pocket perfumes are indeed miniature versions of regular perfumes, designed for easy portability and convenience.They are available for both men and women.',
     stock: 0,
     colors: ['black'],
     stars: 4,
     reviews: 10,
-  },
-  {
-    id: 3,
-    images: cosmeticImageThree,
-    name: 'Cosmetic Three',
-    price: 3500,
-    category: 'beanies',
-    description:
-      'YVNG Saint Company introduces a divine touch to your winter essentials with our collection of religious-based beanies. Experience the warmth of faith as our beanies seamlessly blend religious symbols and meaningful motifs, creating a cozy yet powerful accessory for the devout.',
-    stock: 10,
-    colors: ['black', 'gray', 'darkorange', 'green'],
-    stars: 4.4,
-    reviews: 15,
   },
 ]
 
@@ -272,12 +306,18 @@ export const ceo = [
   {
     id: 1,
     icon: staffOne,
-    title: 'Founder and CEO of ROYAL MEMORIA ',
+    title: 'FOUNDER AND CEO of ROYAL MEMORIA ',
     text: 'Memoria Pungwe ',
     descriptionOne:
-      "Memoria Pungwe is a Founder and CEO of ROYAL MEMORIA She holds a bachelor's degree in public relations and communication and holds a certificate in media arts. She launched into A career as a screenwriter and editor, she Writes and produces South African films. She IS about to write A book that transports readers to “phenomenology” Memoria has a non-profit association made up of lawyers to defend women and young voiceless girls AND help them fight against violence AND abuse with the slogan “Women are stronger than they are. ",
+      "Memoria Pungwe is the Founder and CEO of Royal Memoria, a dynamic leader with a rich background in public relations, communication, and media arts. Armed with a bachelor's degree in public relations and communication, as well as a certificate in media arts, she embarked on a successful career as a screenwriter and editor, notably crafting compelling narratives for South African films. ",
     descriptionTwo:
-      'Memoria Loves children, she has a strong passion for working with children. AND provide THEM WITH AN environment where THEY feel safe, she has worked as a family support worker in various childcare programs AND the family resource program. She has experience working AND caring for children of different ages AND understands the importance of interacting with children in a positive way.',
+      'Beyond her creative pursuits, Memoria is on the brink of venturing into the literary world with an upcoming book aimed at transporting readers into the realm of "phenomenology," showcasing her versatility and depth as a storyteller.',
+    descriptionThree:
+      "However, Memoria's impact extends far beyond the realms of art and entertainment. She is deeply committed to empowering women and advocating for the rights of voiceless girls through her non-profit association. With a team of dedicated lawyers, she works tirelessly to combat violence and abuse, championing the slogan 'Women are stronger than they are.'",
+    descriptionFour:
+      "Moreover, Memoria's love for children is evident in her extensive experience as a family support worker across various childcare programs and family resource initiatives. She creates nurturing environments where children feel safe and supported, recognizing the importance of positive interactions in shaping young minds.",
+    descriptionFive:
+      "Memoria's multifaceted approach to leadership, coupled with her unwavering dedication to empowering women and nurturing children, embodies the core values of Royal Memoria and serves as a beacon of inspiration for positive change within communities.",
   },
 ]
 
@@ -285,83 +325,77 @@ export const teamCanada = [
   {
     id: 1,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Memoria Pungwe',
+    text: 'Founder And CEO',
   },
   {
     id: 2,
     icon: staffOne,
-    title: 'Isreal',
+    title: 'Isreal Amboko',
     text: 'Graphic Design',
   },
   {
     id: 3,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Jocelyn Pungwe',
+    text: 'Software Engineer',
   },
 ]
 export const teamSouthAfrica = [
   {
     id: 1,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Mi Jose Bokeka',
+    text: 'Film Director & Administrative ',
   },
   {
     id: 2,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Marie Louise Rossouw',
+    text: 'Actress & Script Writter',
   },
   {
     id: 3,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Claude Rossouw',
+    text: 'Editor',
   },
   {
     id: 4,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Roddi',
+    text: 'Marketing Director',
   },
   {
     id: 5,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Emmanuel Mbikavu',
+    text: 'Real Estate Agent',
   },
   {
     id: 6,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
-  },
-  {
-    id: 7,
-    icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Fidel Banza',
+    text: 'Network Engineer',
   },
 ]
 export const teamCongo = [
   {
     id: 1,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Rock Bokeka',
+    text: 'Managing Director',
   },
   {
     id: 2,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Eunice Mbulu',
+    text: 'Head Of Administration',
   },
   {
     id: 3,
     icon: staffOne,
-    title: 'Isreal',
-    text: 'Graphic Design',
+    title: 'Shekinah Lusangu',
+    text: 'Administrative Assistance',
   },
 ]

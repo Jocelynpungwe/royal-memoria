@@ -7,6 +7,10 @@ import { FaTimes } from 'react-icons/fa'
 
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleSidebar } from '../features/actionSlice'
+import { closeDropdown } from '../features/servicesSlice'
+
+import ServiceNav from './ServiceNav'
+import ServiceSideBar from './ServiceSideBar'
 
 function Sidebar() {
   const { isSideBarOpen } = useSelector((store) => store.actions)
@@ -14,6 +18,9 @@ function Sidebar() {
 
   const toggle = () => {
     dispatch(toggleSidebar())
+  }
+  const toggleCloseDropdown = () => {
+    dispatch(closeDropdown())
   }
 
   return (
@@ -28,38 +35,17 @@ function Sidebar() {
           </button>
         </div>
         <ul className="links">
-          <li>
+          <li onClick={toggle}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li onClick={toggle}>
             <Link to="about">About</Link>
           </li>
-          <li>
-            <select>
-              <option>
-                <Link to="entertainment">Entertainment</Link>
-              </option>
-              <option>
-                <Link to="travel">Travel and Counsulting</Link>
-              </option>
-              <option>
-                <Link to="proparty">Proparty and Innovation</Link>
-              </option>
-              <option>
-                <Link to="kitoko">M Kitoko Food</Link>
-              </option>
-              <option>
-                <Link to="cosmetics">Cosmetics</Link>
-              </option>
-            </select>
-          </li>
-          <li>
+          <ServiceSideBar />
+          <li onClick={toggle}>
             <Link to="contact">Contact</Link>
           </li>
-          <li>
-            <Link to="gallery">Gallery</Link>
-          </li>
-          <li>
+          <li onClick={toggle}>
             <Link to="charity">Charity</Link>
           </li>
         </ul>
@@ -71,13 +57,15 @@ function Sidebar() {
 const SideBarWrapper = styled.div`
   text-align: center;
   img {
-    width: 5rem;
+    width: 7rem;
   }
+
   .sidebar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    background: black;
   }
   .close-btn {
     font-size: 2rem;

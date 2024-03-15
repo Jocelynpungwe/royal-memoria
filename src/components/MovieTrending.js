@@ -38,11 +38,15 @@ function MovieTrending({ movie, trending }) {
 }
 
 const Wrapper = styled.div`
+  border: 1px solid var(--primary-gold);
+  margin-bottom: 1rem;
+  border-radius: 10px;
   .container-movie {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    padding: 1rem;
   }
 
   .movie-background {

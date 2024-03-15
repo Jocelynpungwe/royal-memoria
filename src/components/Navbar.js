@@ -44,9 +44,6 @@ function Navbar() {
                 <Link to="contact">Contact</Link>
               </li>
               <li onClick={toggleCloseDropdown}>
-                <Link to="gallery">Gallery</Link>
-              </li>
-              <li onClick={toggleCloseDropdown}>
                 <Link to="charity">Charity</Link>
               </li>
             </ul>

@@ -14,24 +14,23 @@ function PropertyInfo() {
             Discover Your Dream Home: A Seamless Blend of Luxury and Nature
           </h2>
           <p>
-            Description: Explore our website to find the ideal property that
-            seamlessly combines luxury living with the tranquility of nature.
-            From panoramic views to meticulously designed interiors, each
-            listing promises a unique and enchanting experience. Whether you're
-            searching for a serene retreat or a stylish urban abode, our
-            collection of properties is curated to fulfill your desires. Begin
-            your journey towards finding your dream home with us and step into a
-            world where comfort meets natural beauty.
+            Are you looking to buy property in democratic republic of Congo and
+            South Africa? Look no further! With a dedication to excellence and
+            professionalism, we guarantee the highest quality service to all our
+            clients. Navigating the process of preparing, pricing, and marketing
+            your property can be overwhelming, but we are here to help every
+            step of the way.
           </p>
         </div>
         <img src={imageProperty} alt="bulding" />
         <div>
-          <h2>Discover Your Dream Home</h2>
+          <h2>Are You Ready To Sell?</h2>
           <p>
-            Description: Explore our website to find the ideal property that
-            seamlessly combines luxury living with the tranquility of nature.
-            From panoramic views to meticulously designed interiors, each
-            listing promises a unique and enchanting experience.
+            Do you want to sell your house ? and you don't know how to start?
+            don’t worry. we will help you prepare, price and market to secure
+            the best price and the quickest closing time we can. We Utilize
+            various marketing channels to reach potential buyers, such as online
+            listings and social media.
           </p>
           <img src={imagePropertyTwo} alt="bulding" className="img-small" />
           <img src={imagePropertyThree} alt="bulding" className="img-small" />

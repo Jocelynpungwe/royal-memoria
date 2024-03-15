@@ -6,6 +6,8 @@ import {
   PropertyContact,
   Sponsors,
 } from '../components'
+import { goals } from '../utils/constants'
+import propertyImage from '../images/chess.png'
 
 function HomePage() {
   return (
@@ -13,8 +15,8 @@ function HomePage() {
       <Hero />
       <Sponsors />
       <HomeDescription />
-      <Mission />
-      <PropertyContact />
+      <Mission array={goals} />
+      <PropertyContact departmenImage={propertyImage} />
     </>
   )
 }
