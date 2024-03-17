@@ -37,6 +37,9 @@ function TravelConsoltingInfo() {
 }
 
 const Wrapper = styled.div`
+  h2 {
+    color: var(--primary-gold);
+  }
   img {
     object-fit: cover;
     width: 100%;

@@ -8,7 +8,7 @@ function TravelInfo() {
       <img src={imageCanada} alt="canada city" className="first-img" />
 
       <div className="info">
-        <h2>What is the Deparment of Travel and Tourism about?</h2>
+        <h2>Who are we?</h2>
         <p>
           Royal Travel is a subsidiary of Royal Memoria , it is is dedicated to
           facilitating smart and efficient travel for both young people and
@@ -30,6 +30,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+
+  h2 {
+    color: var(--primary-gold);
+  }
+
   img {
     width: 100%;
     object-fit: cover;

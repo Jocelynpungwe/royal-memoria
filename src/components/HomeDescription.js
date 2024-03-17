@@ -8,10 +8,10 @@ function HomeDescription() {
       <div className="what-we-bring">
         <h2 className="title">Who Are We</h2>
         <p className="desc">
-          Royal memoria is a multi-service company with five subsidiaries in
-          Canada ,South africa, and Dr Congo .We specializes in media buying,
-          movie and production, food and production, property and innovation,
-          travel and tourism, and cosmetics products.
+          We are a diverse and dynamic company! Having subsidiaries in different
+          countries allows Royal Memoria to tap into various markets and cater
+          to a wide range of consumer needs. Each subsidiary likely plays a
+          crucial role in fulfilling the company's overarching objectives.
         </p>
       </div>
       <div className="mission">
