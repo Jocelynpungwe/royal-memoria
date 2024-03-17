@@ -21,7 +21,7 @@ function EntertainmentPage() {
       />
       <EntertainmentInfo />
       <BehindTheScene />
-      <PropertyContact departmenImage={propertyImage} />
+      <PropertyContact departmentName="Film & Production" />
     </>
   )
 }

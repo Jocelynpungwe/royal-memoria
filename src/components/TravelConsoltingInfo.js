@@ -7,13 +7,12 @@ function TravelConsoltingInfo() {
       <div className="info">
         <h2>Visa facilitation services</h2>
         <p>
-          Visa facilitation services We provide assistance with visa processing
-          and guiding customers through the application procedure , our service
-          can help streamline the process and alleviate potential stress by
-          insuring that applicants understand the requirements and steps
-          involved.
+          We provide assistance with visa processing and guiding customers
+          through the application procedure , our service can help streamline
+          the process and alleviate potential stress by insuring that applicants
+          understand the requirements and steps involved.
         </p>
-        <h2>Placement Services</h2>
+        <h2>Accommodation</h2>
         <p>
           Finding a place to stay, be it a hotel, guest house, hostel,
           apartment, caravan, mud hut or longboat is often the hardest part of

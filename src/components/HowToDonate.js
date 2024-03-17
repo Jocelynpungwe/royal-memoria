@@ -4,7 +4,10 @@ function HowToDonate() {
   return (
     <Wrapper>
       <h2>How To Donate</h2>
-      <p>Send an interaction to: pungwememoria@gmail.com </p>
+      <p>
+        Send an interaction transaction to:{' '}
+        <strong> pungwememoria@gmail.com</strong>{' '}
+      </p>
     </Wrapper>
   )
 }

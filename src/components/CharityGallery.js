@@ -36,6 +36,7 @@ const Wrapper = styled.div`
     height: 400px;
     object-fit: cover;
     margin-bottom: 1.5rem;
+    border: 1px solid var(--primary-gold);
   }
   h2 {
     color: var(--primary-gold);

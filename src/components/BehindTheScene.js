@@ -6,7 +6,7 @@ import VideoPortfolio from './VideoPortfolio'
 function BehindTheScene() {
   return (
     <Wrapper>
-      <div className="section-center">
+      <div>
         <h2>Behind The Scenes</h2>
         <div className="grid">
           <video className="large-video" autoPlay muted loop id="myVideo">
@@ -33,8 +33,8 @@ function BehindTheScene() {
           audiences across the continent and around the world, through mixed
           broadcasts.
         </p>
-        <VideoPortfolio />
       </div>
+      <VideoPortfolio />
     </Wrapper>
   )
 }

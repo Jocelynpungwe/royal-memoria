@@ -51,6 +51,7 @@ const Wrapper = styled.div`
 
   h2 {
     font-size: 1rem;
+    color: var(--primary-gold);
   }
 
   img {

@@ -70,7 +70,7 @@ const Wrapper = styled.section`
   }
   span {
     width: 4rem;
-    height: 4rem;
+    height: 5.5rem;
     display: grid;
     margin: 0 auto;
     place-items: center;

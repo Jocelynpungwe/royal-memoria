@@ -52,6 +52,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   padding: 5rem 0;
 
+  h2,
   h3,
   h4 {
     color: var(--primary-gold);

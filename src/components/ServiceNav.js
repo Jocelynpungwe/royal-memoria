@@ -18,7 +18,7 @@ function ServiceNav() {
 
   return (
     <Wrapper className="nav-links">
-      <button onClick={toggleDropdownNav}>Services</button>
+      <button onClick={toggleDropdownNav}>Subsidiaries</button>
 
       {isDropdownOpen && (
         <ul
@@ -27,20 +27,20 @@ function ServiceNav() {
           onMouseLeave={toggleCloseDropdown}
         >
           <li>
-            <Link to="entertainment">Film and Production</Link>
+            <Link to="entertainment">Film & Production</Link>
           </li>
           <li>
-            <Link to="travel">Travel and Tourism</Link>
+            <Link to="travel">Travel & Tours</Link>
           </li>
           <li>
-            <Link to="property">Property and Innovation</Link>
+            <Link to="property">Property & Innovation</Link>
           </li>
           <li>
             <Link to="food">M Kitoko Food</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="cosmetic">Cosmetics</Link>
-          </li>
+          </li> */}
         </ul>
       )}
     </Wrapper>

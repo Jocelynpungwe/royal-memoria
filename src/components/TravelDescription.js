@@ -12,6 +12,14 @@ function TravelDescription() {
           Explore our curated list of destinations and discover your next
           adventure.
         </p>
+        <ol>
+          <li>France</li>
+          <li>England</li>
+          <li>USA</li>
+          <li>Canada</li>
+          <li>Dominican Republic</li>
+          <li>Tanzania</li>
+        </ol>
       </div>
     </Wrapper>
   )
@@ -50,6 +58,9 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     padding: 20px;
+  }
+  li {
+    text-align: left;
   }
 `
 export default TravelDescription

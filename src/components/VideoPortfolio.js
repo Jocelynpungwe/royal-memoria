@@ -30,14 +30,16 @@ const Wrapper = styled.div`
   h2 {
     margin: 30px 0;
   }
-  .trending-info {
-    display: flex;
-    overflow-x: auto;
-  }
   .recomand-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 25px;
+    width: 100%;
+  }
+
+  @media (min-width: 800px) {
+    .recomand-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 25px;
+    }
   }
 `
 

@@ -17,15 +17,15 @@ function TravelConsoltingPage() {
     <Wrapper>
       <ServiceHero
         image={image}
-        title="Royal Memoria Travel & Toursm"
-        description="Royal Travel & Toursm is a subsidiary of Royal Memoria , it is is dedicated to facilitating smart and efficient travel for both young people and businesses"
+        title="Royal Travel & Tours"
+        description="Royal Travel & Tours, as a subsidiary of Royal Memoria, specializes in providing smart and efficient travel solutions for both young individuals and businesses alike. With a dedication to excellence and customer satisfaction, Royal Travel & Tours aims to make the travel experience seamless and enjoyable for all its clients."
       />
       <div className="container">
         <TravelInfo />
         <TravelConsoltingInfo />
       </div>
       <TravelDescription />
-      <PropertyContact departmenImage={propertyImage} />
+      <PropertyContact departmentName="Travel & Tourism" />
       {/* <TravelContact /> */}
     </Wrapper>
   )

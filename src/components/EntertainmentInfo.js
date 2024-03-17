@@ -5,22 +5,22 @@ function EntertainmentInfo() {
   return (
     <Wrapper className="section-center">
       <section>
-        <h2>Film and Production/ Royal Memoria Entertainment .</h2>
+        <h2>Film & Production</h2>
         <p>
-          Since our establishment in 2016, Royal Memoria has been dedicated to
-          fostering development across various sectors, particularly in the film
-          and media industry. Our culture revolves around playing a pivotal role
-          in this industry, providing personalized educational, motivational,
-          and institutional content experiences tailored to the diverse needs of
-          life's various facets.
+          Royal Memoria, established in 2016, has been instrumental in nurturing
+          development across various sectors, with a particular focus on the
+          film and media industry. Our ethos centers around assuming a central
+          role in this vibrant industry, delivering bespoke educational,
+          inspirational, and institutional content experiences tailored to the
+          multifaceted needs of life.
         </p>
         <p>
-          We specialize in developing and producing ambitious, cinematic films
-          driven by visionary auteurs. Our goal is to create compelling,
-          visually striking, and emotionally resonant films that resonate on an
-          international level. Additionally, we are committed to discovering and
-          supporting new talents, ensuring a continuous influx of fresh voices
-          and perspectives.
+          Our forte lies in the development and production of ambitious,
+          cinematic films guided by visionary auteurs. We are dedicated to
+          crafting captivating, visually stunning, and emotionally impactful
+          films that resonate globally. Moreover, we are steadfast in our
+          commitment to identifying and bolstering emerging talents, ensuring a
+          steady stream of fresh voices and perspectives.
         </p>
         <div>
           <p>
@@ -41,39 +41,21 @@ function EntertainmentInfo() {
         </div>
       </section>
 
-      <img src={logo} alt="logo" className="img-one" />
-
-      <section>
-        <img src={logo} alt="logo" />
-      </section>
       <section>
         <h2>
           Branding ,Marketing, Advertising, public relations, recruiting
           ,staffing
         </h2>
         <p>
-          At Royal Memoria, we excel in branding, marketing, advertising, public
-          relations, and staffing solutions. With a dedicated focus on
-          recruiting talented individuals for roles in marketing, public
-          relations, advertising, graphic design, and web production, we offer
-          comprehensive staffing services for both full-time and contract
-          positions. Our expertise extends to agencies, corporations,
-          nonprofits, and other businesses.
-        </p>
-        <p>
-          In addition to recruitment, we offer a wide range of marketing
-          services including competitive analysis, quantitative and qualitative
-          research, strategy development, new product introductions, packaging
-          design, naming, logo design, exhibit display design, and messaging
-          matrices.
-        </p>
-        <p>
-          Our capabilities also extend to producing advertising media for
-          various products and designing clothing brands. Specializing in
-          television reality production, awareness films, documentary films,
-          music videos, logo animation, logo design, publishing, charity events,
-          and product launches, we ensure impactful storytelling across diverse
-          platforms.
+          Royal Memoria offers a comprehensive suite of services across various
+          facets of branding, marketing, advertising, public relations, and
+          staffing solutions. Our focus on recruiting talented individuals for
+          roles in marketing, public relations, advertising, graphic design, and
+          web production demonstrates a commitment to providing clients with the
+          right personnel for their needs, whether on a full-time or contract
+          basis. Our range of marketing services is impressive, covering
+          everything from competitive analysis to strategy development and from
+          new product introductions to packaging design.
         </p>
       </section>
     </Wrapper>
@@ -84,7 +66,9 @@ const Wrapper = styled.div`
   display: grid;
   padding: 5rem 0;
   h2 {
+    font-size: 1.5rem;
     color: var(--primary-gold);
+    margin-top: 32px;
   }
 
   img {
@@ -95,12 +79,9 @@ const Wrapper = styled.div`
   .img-one {
     order: -2;
   }
-
-  @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-    .img-one {
-      order: 0;
-    }
+  ul {
+    list-style-type: circle;
+    margin-left: 45px;
   }
 `
 

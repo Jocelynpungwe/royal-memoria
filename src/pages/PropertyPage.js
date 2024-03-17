@@ -16,13 +16,13 @@ function PropertyPage() {
     <Wrapper>
       <ServiceHero
         image={imgHero}
-        title="Property and Innovation"
+        title="Property & Innovation"
         description="Royal Memoria Property is a subsidiary estate and property management that provides a range of services including home management, innovations,
           purchasing advice, and GFX digitized gallery services."
       />
       <PropertyAbout />
       <PropertyInfo />
-      <PropertyContact departmenImage={propertyImage} />
+      <PropertyContact departmentName="Property & Innovation" />
     </Wrapper>
   )
 }

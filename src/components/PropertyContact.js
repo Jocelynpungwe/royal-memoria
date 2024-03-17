@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import imageTwo from '../images/africa.png'
+import contactImage from '../images/contact.jpg'
 import { FaEnvelope } from 'react-icons/fa'
+import emailjs from '@emailjs/browser'
 
-function PropertyContact({ departmenImage }) {
+function PropertyContact({ departmentName }) {
   const initialState = {
     fullName: '',
     email: '',
@@ -13,6 +15,7 @@ function PropertyContact({ departmenImage }) {
   }
 
   const [contactUs, setContactUs] = useState(initialState)
+  const form = useRef()
 
   function changeContactUs(e) {
     const name = e.target.name
@@ -26,6 +29,24 @@ function PropertyContact({ departmenImage }) {
     })
   }
 
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm('service_g2giz7b', 'template_hbqqcrr', form.current, {
+        publicKey: 'W3HcC4YK0sEPxOP1Q',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!')
+          setContactUs(initialState)
+        },
+        (error) => {
+          console.log('FAILED...', error.text)
+        }
+      )
+  }
+
   return (
     <Wrapper>
       <div className="section-center">
@@ -33,7 +54,11 @@ function PropertyContact({ departmenImage }) {
           <div>
             <div>
               <h4>Contact Us</h4>
-              <h5>Department</h5>
+              {departmentName ? (
+                <h5>Department of {departmentName}</h5>
+              ) : (
+                <h5>Department</h5>
+              )}
               <p>
                 Have a question or inquiry? Reach out to us at any of our branch
                 locations or simply fill out our online contact form bellow, and
@@ -55,7 +80,7 @@ function PropertyContact({ departmenImage }) {
                 <p>admroyalconsolting@gmail.com</p>
               </div>
             </div>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div>
                 <input
                   type="text"
@@ -111,7 +136,7 @@ function PropertyContact({ departmenImage }) {
               <button type="submit">Send Message</button>
             </form>
           </div>
-          <img src={departmenImage} alt="test name" className="image-two" />
+          <img src={contactImage} alt="test name" className="image-two" />
         </div>
         <img src={imageTwo} alt="test name" className="image-two" />
       </div>
@@ -122,6 +147,10 @@ function PropertyContact({ departmenImage }) {
 const Wrapper = styled.div`
   padding: 5rem 0;
   background: var(--primary-gray);
+
+  h4 {
+    color: var(--primary-gold);
+  }
 
   form {
     width: 100%;

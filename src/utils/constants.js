@@ -8,7 +8,19 @@ import imgFour from '../images/hero/4.png'
 
 import imgFive from '../images/hero/5.png'
 import imgSix from '../images/hero/1.png'
-import staffOne from '../images/team/ceo/ceo.jpg'
+
+// ////////staff images
+import staffOne from '../images/team/default.jpg'
+import ceoImg from '../images/team/ceo/ceo.jpg'
+// team congo
+import rock from '../images/team/congo/rock.jpeg'
+import eu from '../images/team/congo/eu.jpg'
+import ad from '../images/team/congo/ad.jpeg'
+
+// south africa
+import erasH from '../images/team/southafrica/erasmush.jpg'
+import erasW from '../images/team/southafrica/erasmusw.jpg'
+import larse from '../images/team/southafrica/larse.jpeg'
 
 import vidTwo from '../images/movies/movie2.mp4'
 import vidThree from '../images/movies/movie3.mp4'
@@ -235,8 +247,7 @@ export const foodData = [
     id: 1,
     images: foodOne,
     name: 'Royal Burger',
-    priceCongo: 8500,
-    priceSa: 18,
+    price: 17,
     category: 'food',
     description:
       'This is a Combination of Sweetness and juiciness.A burger that passes the "burger test" is typically one that meets or exceeds expectations in terms of taste, texture, and overall satisfaction.',
@@ -249,7 +260,7 @@ export const foodData = [
     id: 2,
     images: foodWater,
     name: 'Water Kitoko',
-    price: 2500,
+    price: 8,
     category: 'Water',
     description:
       'Produced our own sparkling water brand "Memoria"! Sparkling water has gained popularity as a refreshing and healthier alternative to sugary sodas and beverages. We have establish "Memoria" as a trusted and preferred sparkling water brand among our consumers.',
@@ -262,8 +273,8 @@ export const foodData = [
     id: 3,
     images: foodTwo,
     name: 'Chips',
-    price: 3500,
-    category: 'beanies',
+    price: 9,
+    category: 'food',
     description:
       'We do it without oil, Cooking fries without oil can indeed reduce the fat content compared to traditional deep-frying methods. This method typically involves baking or air frying the fries rather than immersing them in oil.',
     stock: 10,
@@ -305,7 +316,7 @@ export const cosmeticData = [
 export const ceo = [
   {
     id: 1,
-    icon: staffOne,
+    icon: ceoImg,
     title: 'FOUNDER AND CEO of ROYAL MEMORIA ',
     text: 'Memoria Pungwe ',
     descriptionOne:
@@ -324,7 +335,7 @@ export const ceo = [
 export const teamCanada = [
   {
     id: 1,
-    icon: staffOne,
+    icon: ceoImg,
     title: 'Memoria Pungwe',
     text: 'Founder And CEO',
   },
@@ -341,22 +352,23 @@ export const teamCanada = [
     text: 'Software Engineer',
   },
 ]
+
 export const teamSouthAfrica = [
   {
     id: 1,
-    icon: staffOne,
-    title: 'Mi Jose Bokeka',
+    icon: larse,
+    title: 'Larson Yuma',
     text: 'Film Director & Administrative ',
   },
   {
     id: 2,
-    icon: staffOne,
+    icon: erasW,
     title: 'Marie Louise Rossouw',
     text: 'Actress & Script Writter',
   },
   {
     id: 3,
-    icon: staffOne,
+    icon: erasH,
     title: 'Claude Rossouw',
     text: 'Editor',
   },
@@ -382,19 +394,19 @@ export const teamSouthAfrica = [
 export const teamCongo = [
   {
     id: 1,
-    icon: staffOne,
+    icon: rock,
     title: 'Rock Bokeka',
     text: 'Managing Director',
   },
   {
     id: 2,
-    icon: staffOne,
+    icon: eu,
     title: 'Eunice Mbulu',
     text: 'Head Of Administration',
   },
   {
     id: 3,
-    icon: staffOne,
+    icon: ad,
     title: 'Shekinah Lusangu',
     text: 'Administrative Assistance',
   },

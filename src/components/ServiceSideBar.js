@@ -23,7 +23,7 @@ function ServiceSideBar() {
 
   return (
     <Wrapper className="side-link">
-      <button onClick={toggleDropdownNav}>Services</button>
+      <button onClick={toggleDropdownNav}>Subsidiaries</button>
 
       {isDropdownOpen && (
         <ul
@@ -32,20 +32,20 @@ function ServiceSideBar() {
           onMouseLeave={toggleCloseDropdown}
         >
           <li onClick={toggle}>
-            <Link to="entertainment">Entertainment</Link>
+            <Link to="entertainment">Film & Production</Link>
           </li>
           <li onClick={toggle}>
-            <Link to="travel">Travel and Consulting</Link>
+            <Link to="travel">Travel & Tours</Link>
           </li>
           <li onClick={toggle}>
-            <Link to="property">Property and Innovation</Link>
+            <Link to="property">Property & Innovation</Link>
           </li>
           <li onClick={toggle}>
             <Link to="food">M Kitoko Food</Link>
           </li>
-          <li onClick={toggle}>
+          {/* <li onClick={toggle}>
             <Link to="cosmetic">Cosmetics</Link>
-          </li>
+          </li> */}
         </ul>
       )}
     </Wrapper>

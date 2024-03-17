@@ -23,7 +23,7 @@ function CosmeticPage() {
       <CosmeticSpecial />
       <CosmetecDiscription />
       <CosmetciWhyUs />
-      <PropertyContact departmenImage={propertyImage} />
+      <PropertyContact departmentName="Cosmetics" />
     </Wrapper>
   )
 }

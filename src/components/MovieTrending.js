@@ -41,12 +41,14 @@ const Wrapper = styled.div`
   border: 1px solid var(--primary-gold);
   margin-bottom: 1rem;
   border-radius: 10px;
+
   .container-movie {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     padding: 1rem;
+    width: 100%;
   }
 
   .movie-background {
@@ -58,8 +60,8 @@ const Wrapper = styled.div`
     }
   }
   .trend-size {
-    width: 300px;
-    height: 300px;
+    /* width: 300px; */
+    /* height: 300px; */
     margin-right: 20px;
   }
 

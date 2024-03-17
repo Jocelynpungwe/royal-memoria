@@ -21,7 +21,7 @@ const Wrapper = styled.div`
   padding: 50px 0;
 
   div {
-    width: 200px;
+    width: 100%;
     height: 200px;
     padding: 10px;
   }
@@ -29,6 +29,11 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media (min-width: 800px) {
+    div {
+      width: 300px;
+    }
   }
 `
 export default GalleryImage

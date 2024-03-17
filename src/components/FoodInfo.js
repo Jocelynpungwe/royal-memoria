@@ -58,6 +58,11 @@ const Wrapper = styled.div`
   display: grid;
   grid-row-gap: 25px;
   padding: 5rem 0;
+
+  h2,
+  h3 {
+    color: var(--primary-gold);
+  }
   .numbers {
     font-size: 3rem;
     color: black;

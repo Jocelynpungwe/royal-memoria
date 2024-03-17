@@ -6,9 +6,8 @@ function Product({
   images,
   name,
   price,
-  priceCongo,
   description,
-  priceSa,
+
   setMain,
 }) {
   return (
@@ -17,10 +16,8 @@ function Product({
         <img src={images} alt={name} />
         <div className="info-div">
           <h4>{name}</h4>
-          {price && <h5 className="price">f{price}</h5>}
-          {priceCongo && <h5 className="price">DRC Price:{priceCongo}</h5>}
-          {priceSa && <h5 className="price">South Africa Price: R{priceSa}</h5>}
-          <p>{description.substring(0, 150)}...</p>
+          {price && <h5 className="price">R{price}</h5>}
+          <p>{description}</p>
           {/* <Link
             to={`/${id}`}
             onClick={() => setMain(images[0])}

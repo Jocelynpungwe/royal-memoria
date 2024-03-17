@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { OurTeam, PageHero, Sponsors } from '../components'
-import aboutImg from '../images/logo/logo-no-background.png'
+import aboutImg from '../images/logo/logo2.png'
 
 const AboutPage = () => {
   useEffect(() => {
@@ -19,17 +19,24 @@ const AboutPage = () => {
             <div className="underline"></div>
           </div>
           <p>
-            Established in 2016 by Memoria Pungwe in South Africa, Royal Memoria
-            has grown into a multi-service company with five subsidiaries. Since
-            July 2021, we have expanded our successful operations into Canada
-            and the Democratic Republic of Congo. Our foundation is built on
-            principles of ethics, integrity, and empowerment, particularly of
-            the youth. Continuously, we strive to deliver innovative and
-            thrilling experiences to our customers across a diverse range of
-            services. Whether you engage with us in South Africa, Canada, or the
-            Democratic Republic of Congo, expect nothing short of excellence and
-            a commitment to making a positive impact in the communities we
-            serve.
+            Royal Memoria, founded in 2016 by Memoria Pungwe in South Africa,
+            has emerged as a prominent parent company with a diversified
+            portfolio comprising five subsidiaries: Royal Memoria Entertainment,
+            Royal Travel Consulting, Royal Memoria Property, Royal Memoria
+            Bites, and Royal Memoria Cosmetics. Since July 2021, the company has
+            expanded its successful operations into Canada and the Democratic
+            Republic of Congo.
+          </p>
+          <p>
+            {' '}
+            At its core, Royal Memoria upholds values of ethics, integrity, and
+            empowerment, with a particular focus on fostering opportunities for
+            the youth. The company is committed to delivering innovative and
+            captivating experiences to its customers, spanning a wide spectrum
+            of services. Whether engaging with Royal Memoria in South Africa,
+            Canada, or the Democratic Republic of Congo, clients can anticipate
+            nothing less than excellence and a dedication to making positive
+            contributions to the communities they serve.
           </p>
         </article>
       </Wrapper>
