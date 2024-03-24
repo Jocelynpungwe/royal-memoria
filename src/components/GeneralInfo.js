@@ -21,7 +21,7 @@ function GeneralInfo() {
           <span className="icon">{<FaEnvelope />}</span>
           <h4>Branch Canada</h4>
           <p className="disc-header">Ottawa, Ontario</p>
-          <p className="email">pmemoria@royalmemoriaentertainment.com</p>
+          <p className="email">pmemoria@royalmemoria.com</p>
           <a href="https://www.facebook.com/share/ZVV6XjUqRroRGP6o/?mibextid=WC7FNe">
             <FaFacebook className="facebook" />
           </a>
@@ -92,7 +92,7 @@ const Wrapper = styled.section`
     /* background: var(--clr-primary-7); */
     background: black;
     text-align: center;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 1rem;
     border-radius: var(--radius);
     p {
       /* color: var(--clr-primary-2); */
@@ -101,6 +101,7 @@ const Wrapper = styled.section`
     }
     .email {
       color: var(--primary-gold);
+      width: 100%;
     }
   }
   span {
