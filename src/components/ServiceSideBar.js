@@ -80,7 +80,7 @@ const Wrapper = styled.div`
 
   .side-link {
     a {
-      color: var(--primary-gold);
+      color: var(--clr-grey-3);
       font-size: 1rem;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
@@ -89,7 +89,7 @@ const Wrapper = styled.div`
         padding: 1rem 1.5rem;
         padding-left: 2rem;
         background: var(--clr-grey-10);
-        color: var(--primary-gold);
+        color: var(--clr-grey-3);
       }
     }
   }
@@ -101,15 +101,15 @@ const Wrapper = styled.div`
     left: 0;
     width: 250px;
     height: 320px;
-    /* background-color: rgba(49, 48, 48, 0.3); */
-    background-color: black;
-    color: var(--primary-gold);
+    background-color: rgba(49, 48, 48, 0.3);
+
+    color: var(--clr-grey-3);
     z-index: 9999;
     li {
       margin: 0.3rem 0;
     }
     a {
-      color: var(--primary-gold);
+      color: var(--clr-grey-3);
       font-size: 1rem;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
@@ -117,8 +117,8 @@ const Wrapper = styled.div`
       &:hover {
         padding: 1rem 1.5rem;
         padding-left: 2rem;
-        background: var(--clr-grey-1);
-        color: var(--primary-gold);
+        background: var(--clr-grey-10);
+        color: var(--clr-grey-3);
       }
     }
   }

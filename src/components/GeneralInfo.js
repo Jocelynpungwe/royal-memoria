@@ -4,8 +4,8 @@ import { FaEnvelope, FaFacebook } from 'react-icons/fa'
 
 function GeneralInfo() {
   return (
-    <Wrapper>
-      <div className="section-center services-center">
+    <Wrapper className="section-center">
+      <div className="services-center">
         <article className="service">
           <span className="icon">{<FaEnvelope />}</span>
           <h4>Main Branch: South Africa</h4>
