@@ -52,7 +52,7 @@ const Wrapper = styled.div`
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
   }
 
   .smaller-video,
@@ -73,6 +73,12 @@ const Wrapper = styled.div`
   p {
     margin-top: 25px;
     color: white;
+  }
+
+  @media (min-width: 800px) {
+    .grid {
+      grid-column-gap: 30px;
+    }
   }
 `
 
