@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import entvid from '../images/hero/entvid.mp4'
 
 import {
@@ -9,6 +9,9 @@ import {
 } from '../components'
 import propertyImage from '../images/chess.png'
 function EntertainmentPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <ServiceHero

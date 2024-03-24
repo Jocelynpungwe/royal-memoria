@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import entvid from '../images/hero/entvid.mp4'
 import VideoPortfolio from './VideoPortfolio'
+import imgOne from '../images/behindsceneimage/img3.jpg'
+import imgTwo from '../images/behindsceneimage/img8.jpg'
+import imgThree from '../images/behindsceneimage/img15.jpg'
 
 function BehindTheScene() {
   return (
@@ -9,23 +12,24 @@ function BehindTheScene() {
       <div>
         <h2>Behind The Scenes</h2>
         <div className="grid">
-          <video className="large-video" autoPlay muted loop id="myVideo">
+          {/* <video
+            className="large-video"
+            playsInline
+            autoPlay
+            muted
+            loop
+            id="myVideo"
+          >
             <source src={entvid} type="video/mp4" />
-          </video>
-
+          </video> */}
+          <img src={imgThree} alt="behind the scene" className="large-video" />
           <div className="vid2">
-            <video
-              className="smaller-video"
-              autoPlay
-              muted
-              loop
-              style={{ marginBottom: '20px' }}
-            >
-              <source src={entvid} type="video/mp4" />
-            </video>
-            <video className="smaller-video" autoPlay muted loop id="myVideo">
-              <source src={entvid} type="video/mp4" />
-            </video>
+            <img
+              src={imgOne}
+              alt="behind the scene"
+              style={{ marginBottom: '24px' }}
+            />
+            <img src={imgTwo} alt="behind the scene" />
           </div>
         </div>
         <p>
@@ -51,7 +55,8 @@ const Wrapper = styled.div`
     grid-column-gap: 30px;
   }
 
-  .smaller-video {
+  .smaller-video,
+  img {
     width: 100%;
     height: 200px;
     object-fit: cover;

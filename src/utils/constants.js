@@ -4,10 +4,10 @@ import imgOne from '../images/hero/6.png'
 import imgTwo from '../images/hero/2.png'
 
 import imgThree from '../images/travel/travelhero.jpg'
-import imgFour from '../images/hero/4.png'
+import imgFour from '../images/hero/property2.jpg'
 
 import imgFive from '../images/hero/5.png'
-import imgSix from '../images/hero/1.png'
+// import imgSix from '../images/hero/1.png'
 
 // ////////staff images
 import staffOne from '../images/team/default.jpg'
@@ -22,11 +22,9 @@ import erasH from '../images/team/southafrica/erasmush.jpg'
 import erasW from '../images/team/southafrica/erasmusw.jpg'
 import larse from '../images/team/southafrica/larse.jpeg'
 
-import vidTwo from '../images/movies/movie2.mp4'
 import vidThree from '../images/movies/movie3.mp4'
 import vidFour from '../images/movies/movie4.mp4'
 import vidFive from '../images/movies/movie5.mp4'
-import vidSix from '../images/movies/movie6.mp4'
 
 import cosmeticImageOne from '../images/cosmetic/4.png'
 import cosmeticImageTwo from '../images/cosmetic/5.png'
@@ -131,13 +129,6 @@ export const movieGallery = [
 
 export const movierecomnd = [
   {
-    vid: vidTwo,
-    title: 'Mafia',
-    year: '2023',
-    genre: 'Movie',
-    rated: 'PG',
-  },
-  {
     vid: vidThree,
     title: 'Beautiful lies',
     year: '2023',
@@ -155,13 +146,6 @@ export const movierecomnd = [
     vid: vidFive,
     title: 'African Connection',
     year: '2022',
-    genre: 'Movie',
-    rated: 'PG',
-  },
-  {
-    vid: vidSix,
-    title: 'Beautiful lies',
-    year: '2023',
     genre: 'Movie',
     rated: 'PG',
   },
@@ -198,12 +182,12 @@ export const heroimage = [
     title: 'Slide 5',
     info: 'this is the five paragraph',
   },
-  {
-    url: imgSix,
-    alt: 'six',
-    title: 'Slide 6',
-    info: 'this is the six paragraph',
-  },
+  // {
+  //   url: imgSix,
+  //   alt: 'six',
+  //   title: 'Slide 6',
+  //   info: 'this is the six paragraph',
+  // },
 ]
 
 export const goals = [
@@ -356,8 +340,8 @@ export const teamCanada = [
 export const teamSouthAfrica = [
   {
     id: 1,
-    icon: larse,
-    title: 'Larson Yuma',
+    icon: rock,
+    title: 'Rock Bokeka',
     text: 'Film Director & Administrative ',
   },
   {
@@ -392,12 +376,12 @@ export const teamSouthAfrica = [
   },
 ]
 export const teamCongo = [
-  {
-    id: 1,
-    icon: rock,
-    title: 'Rock Bokeka',
-    text: 'Managing Director',
-  },
+  // {
+  //   id: 1,
+  //   icon: rock,
+  //   title: 'Rock Bokeka',
+  //   text: 'Managing Director',
+  // },
   {
     id: 2,
     icon: eu,

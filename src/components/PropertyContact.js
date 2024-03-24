@@ -33,9 +33,14 @@ function PropertyContact({ departmentName }) {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_g2giz7b', 'template_hbqqcrr', form.current, {
-        publicKey: 'W3HcC4YK0sEPxOP1Q',
-      })
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log('SUCCESS!')
@@ -43,6 +48,11 @@ function PropertyContact({ departmentName }) {
         },
         (error) => {
           console.log('FAILED...', error.text)
+          console.log(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_PUBLIC_KEY,
+            process.env.REACT_APP_EMAIL_TEMPLATE
+          )
         }
       )
   }
@@ -53,7 +63,7 @@ function PropertyContact({ departmentName }) {
         <div className="container">
           <div>
             <div>
-              <h4>Contact Us</h4>
+              <h4>Get in Touch</h4>
               {departmentName ? (
                 <h5>Department of {departmentName}</h5>
               ) : (
@@ -64,7 +74,7 @@ function PropertyContact({ departmentName }) {
                 locations or simply fill out our online contact form bellow, and
                 we'll promptly get back to you.
               </p>
-              <h5>Canada</h5>
+              {/* <h5>Canada</h5>
               <div className="icons">
                 <FaEnvelope />
                 <p className="icons">pmemoria@royalmemoriaentertainment.com</p>
@@ -78,7 +88,7 @@ function PropertyContact({ departmentName }) {
               <div className="icons">
                 <FaEnvelope />
                 <p>admroyalconsolting@gmail.com</p>
-              </div>
+              </div> */}
             </div>
             <form ref={form} onSubmit={sendEmail}>
               <div>
@@ -136,9 +146,8 @@ function PropertyContact({ departmentName }) {
               <button type="submit">Send Message</button>
             </form>
           </div>
-          <img src={contactImage} alt="test name" className="image-two" />
+          <img src={imageTwo} alt="test name" className="image-two" />
         </div>
-        <img src={imageTwo} alt="test name" className="image-two" />
       </div>
     </Wrapper>
   )
@@ -179,6 +188,9 @@ const Wrapper = styled.div`
     margin-bottom: 6px;
     resize: none;
     box-sizing: border-box;
+    background: white;
+    font-family: inherit;
+    font-size: 16px;
   }
 
   label {

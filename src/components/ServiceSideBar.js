@@ -60,12 +60,15 @@ const Wrapper = styled.div`
   button {
     border: none;
     background: transparent;
-    color: black;
+    color: var(--clr-grey-3);
     font-size: 1rem;
     text-transform: capitalize;
+    transition: var(--transition);
+    text-align: left;
     letter-spacing: var(--spacing);
     padding: 1rem 1.5rem;
     cursor: pointer;
+    width: 100%;
 
     &:hover {
       padding: 1rem 1.5rem;
@@ -77,7 +80,7 @@ const Wrapper = styled.div`
 
   .side-link {
     a {
-      color: black;
+      color: var(--primary-gold);
       font-size: 1rem;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
@@ -86,22 +89,37 @@ const Wrapper = styled.div`
         padding: 1rem 1.5rem;
         padding-left: 2rem;
         background: var(--clr-grey-10);
-        color: var(--clr-grey-2);
+        color: var(--primary-gold);
       }
     }
   }
 
   .sidedrop-down {
     position: absolute;
-    margin-left: 120px;
+    margin-left: 150px;
     top: 0;
     left: 0;
     width: 250px;
     height: 320px;
-    background-color: rgba(49, 48, 48, 0.3);
+    /* background-color: rgba(49, 48, 48, 0.3); */
+    background-color: black;
+    color: var(--primary-gold);
     z-index: 9999;
     li {
       margin: 0.3rem 0;
+    }
+    a {
+      color: var(--primary-gold);
+      font-size: 1rem;
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+
+      &:hover {
+        padding: 1rem 1.5rem;
+        padding-left: 2rem;
+        background: var(--clr-grey-1);
+        color: var(--primary-gold);
+      }
     }
   }
 `

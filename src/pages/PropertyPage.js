@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import imgHero from '../images/property/propertyhero.jpg'
 import {
   EntertainmentInfo,
@@ -12,6 +12,9 @@ import {
 import styled from 'styled-components'
 import propertyImage from '../images/chess.png'
 function PropertyPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <ServiceHero

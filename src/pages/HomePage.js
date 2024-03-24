@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {
   Hero,
   HomeDescription,
@@ -11,6 +11,9 @@ import { goals } from '../utils/constants'
 import propertyImage from '../images/hero/6.png'
 
 function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       {/* <ServiceHero /> */}

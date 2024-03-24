@@ -4,9 +4,9 @@ import styled from 'styled-components'
 function GalleryImage({ array }) {
   return (
     <Wrapper>
-      {array.map((image) => {
+      {array.map((image,index) => {
         return (
-          <div>
+          <div key={index}>
             <img src={image.urlImg} alt={image.altImg} />
           </div>
         )
@@ -29,6 +29,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-bottom: 25px;
   }
   @media (min-width: 800px) {
     div {

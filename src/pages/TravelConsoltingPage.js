@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import image from '../images/travel/travelhero.jpg'
 import {
@@ -13,6 +13,9 @@ import {
 import propertyImage from '../images/chess.png'
 
 function TravelConsoltingPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <ServiceHero

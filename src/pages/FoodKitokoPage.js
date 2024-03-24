@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import foodImage from '../images/hero/5.png'
 import {
   ServiceHero,
@@ -11,6 +11,9 @@ import {
 
 import propertyImage from '../images/chess.png'
 function FoodKitokoPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <ServiceHero

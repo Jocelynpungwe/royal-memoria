@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import {
   CosmetciWhyUs,
@@ -12,6 +12,9 @@ import cosmeticImage from '../images/cosmetic/cosmetic4.jpg'
 import { cosmeticData } from '../utils/constants'
 import propertyImage from '../images/chess.png'
 function CosmeticPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <ServiceHero

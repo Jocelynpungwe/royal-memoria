@@ -12,7 +12,7 @@ function VideoPortfolio() {
         <h2>Video Portfolio</h2>
         <div className="recomand-info">
           {movierecomnd.map((movie) => {
-            return <MovieTrending movie={movie} />
+            return <MovieTrending movie={movie} key={movie.title} />
           })}
         </div>
       </div>

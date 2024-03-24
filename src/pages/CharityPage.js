@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import {
   OurStory,
@@ -9,6 +9,9 @@ import {
 } from '../components'
 import { charity } from '../utils/constants'
 function CharityPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Wrapper>
       <PageHero title="Charity" />

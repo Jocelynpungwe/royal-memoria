@@ -18,6 +18,7 @@ function Sidebar() {
 
   const toggle = () => {
     dispatch(toggleSidebar())
+    dispatch(closeDropdown())
   }
   const toggleCloseDropdown = () => {
     dispatch(closeDropdown())

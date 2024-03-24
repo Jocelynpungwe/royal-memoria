@@ -42,6 +42,8 @@ import PropertyAbout from './PropertyAbout'
 import OurStory from './OurStory'
 import HowToDonate from './HowToDonate'
 import CharityGallery from './CharityGallery'
+import Gratitude from './Gratitude'
+import GeneralInfo from './GeneralInfo'
 
 export {
   Navbar,
@@ -88,4 +90,6 @@ export {
   OurStory,
   HowToDonate,
   CharityGallery,
+  Gratitude,
+  GeneralInfo,
 }
